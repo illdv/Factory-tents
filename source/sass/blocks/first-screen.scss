@@ -4,16 +4,21 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
+	height: 84vh;
 	z-index: 1;
+	.container {
+		height: 84vh;
+	}
 	&::before {
 		content: '';
 		position: absolute;
 		width: 70%;
-		height: 104vh;
-		background-image: url('../../img/frame-yellow.png');
-		background-position: 60% 109%;
+		height: 100vh;
+		background-image: url('../../img/frame-yellow.svg');
+		background-position: 45% 50%;
 		background-repeat: no-repeat;
 		z-index: -1;
+		background-size: auto 100%;
 	}
 	&::after {
 		content: '';
@@ -27,12 +32,10 @@
 	}
 	header {
 		padding-top: 15px;
-		padding-bottom: 40px;
 		.experience {
 			color: $white;
 			font-weight: bold;
 			font-size: 16px;
-			text-align: center;
 			span {
 				color: $yellow-lighter;
 				text-transform: uppercase
@@ -99,6 +102,7 @@
 	}
 	.triggers {
 		margin-bottom: 0;
+		margin-top: -80px;
 		li {
 			text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.25);
 			color: $white;
@@ -113,14 +117,14 @@
 	}
 	.background {
 		background-image: url('../../img/rhomb-background.svg');
-		background-position: 80% 50%;
+		background-position: 73% 50%;
 		background-size: contain;
 		background-repeat: no-repeat;
 		text-transform: uppercase;
 	}
 	.rhomb {
 		min-height: 400px;
-		margin-left: 100px;
+		margin-left: 5%;
 		span {
 			font-size: 36px;
 			font-weight: 700;
