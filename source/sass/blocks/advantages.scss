@@ -1,0 +1,25 @@
+.advantages {
+	padding: 50px 0;
+	background-image: url('../../img/advantages-background.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	.official-coop,
+	.full-equip {
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 20px;
+		text-transform: uppercase;
+		width: 240px;
+		height: 240px;
+		text-align: center;
+		border: 10px solid $yellow-lighter;
+	}
+	.text-block {
+		width: 260px;
+		height: 260px;
+		font-size: 16px;
+		font-weight: 500;
+		padding: 0 20px;
+	}
+}

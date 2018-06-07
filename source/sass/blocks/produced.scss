@@ -1,0 +1,23 @@
+.produced {
+	padding: 50px 0;
+	.caption {
+		text-transform: uppercase;
+		P {
+			margin-bottom: 0.5rem;
+		}
+		p:first-of-type {
+			color: $yellow-darker;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		p:nth-last-of-type(2) {
+			color: $black;
+			font-size: 36px;
+			font-weight: 500;
+		}
+		p:last-of-type {
+			font-size: 24px;
+			font-weight: 400;
+		}
+	}
+}

@@ -1,0 +1,193 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v15-latin-regular.woff2") format("woff2"), url("../fonts/open-sans-v15-latin-regular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/open-sans-v15-latin-700.woff2") format("woff2"), url("../fonts/open-sans-v15-latin-700.woff") format("woff"); }
+
+@font-face {
+  font-family: 'PF Din Text Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pfdintextpro-regular-webfont.woff2") format("woff2"), url("../fonts/pfdintextpro-regular-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: 'PF Din Text Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/pfdintextpro-bold-webfont.woff2") format("woff2"), url("../fonts/pfdintextpro-bold-webfont.woff2") format("woff"); }
+
+body {
+  font-family: PF Din Text Pro, Arial, sans-serif;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #292727; }
+
+.first-screen {
+  background-image: url("../../img/background-main.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1; }
+  .first-screen::before {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 104vh;
+    background-image: url("../../img/frame-yellow.png");
+    background-position: 60% 109%;
+    background-repeat: no-repeat;
+    z-index: -1; }
+  .first-screen::after {
+    content: '';
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2; }
+  .first-screen header {
+    padding-top: 15px;
+    padding-bottom: 40px; }
+    .first-screen header .experience {
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center; }
+      .first-screen header .experience span {
+        color: #fbd34b;
+        text-transform: uppercase; }
+    .first-screen header .phone {
+      font-family: "Open Sans";
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 26.04px;
+      color: #ffffff;
+      text-decoration: none; }
+      .first-screen header .phone:hover {
+        opacity: 0.8; }
+      .first-screen header .phone:active {
+        opacity: 1; }
+    .first-screen header .request {
+      color: #fbd34b;
+      font-weight: 500;
+      line-height: 26.04px;
+      letter-spacing: 0.35px;
+      border-bottom: 1px dotted #fbd34b;
+      margin-bottom: 15px;
+      cursor: pointer; }
+      .first-screen header .request:hover {
+        border-bottom: none;
+        opacity: 0.9;
+        padding-bottom: 1px; }
+      .first-screen header .request:active {
+        opacity: 1;
+        color: #f3b200; }
+    .first-screen header .footnote {
+      color: #ffffff;
+      opacity: 0.9;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.3px; }
+  .first-screen .caption {
+    text-transform: uppercase; }
+    .first-screen .caption h1 {
+      text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.25);
+      color: #ffffff;
+      font-size: 62px;
+      font-weight: bold; }
+    .first-screen .caption h2 {
+      color: #ffffff;
+      font-size: 30px;
+      font-weight: 400; }
+    .first-screen .caption p {
+      color: #fbd34b;
+      font-size: 18px;
+      font-weight: 500; }
+  .first-screen .triggers {
+    margin-bottom: 0; }
+    .first-screen .triggers li {
+      text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.25);
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 400;
+      padding-left: 65px;
+      padding-top: 50px; }
+    .first-screen .triggers li:first-child {
+      padding-top: 36px; }
+  .first-screen .background {
+    background-image: url("../../img/rhomb-background.svg");
+    background-position: 80% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-transform: uppercase; }
+  .first-screen .rhomb {
+    min-height: 400px;
+    margin-left: 100px; }
+    .first-screen .rhomb span {
+      font-size: 36px;
+      font-weight: 700; }
+    .first-screen .rhomb p:first-of-type {
+      font-size: 18px;
+      font-weight: 500;
+      text-align: center; }
+    .first-screen .rhomb .footnote {
+      font-size: 16px;
+      opacity: 0.9;
+      text-transform: capitalize; }
+    .first-screen .rhomb button {
+      color: #ffffff;
+      background: #292727;
+      font-size: 16px;
+      line-height: 26px;
+      width: 305px;
+      height: 55px;
+      margin-bottom: 40px; }
+
+.produced {
+  padding: 50px 0; }
+  .produced .caption {
+    text-transform: uppercase; }
+    .produced .caption P {
+      margin-bottom: 0.5rem; }
+    .produced .caption p:first-of-type {
+      color: #f3b200;
+      font-size: 20px;
+      font-weight: bold; }
+    .produced .caption p:nth-last-of-type(2) {
+      color: #292727;
+      font-size: 36px;
+      font-weight: 500; }
+    .produced .caption p:last-of-type {
+      font-size: 24px;
+      font-weight: 400; }
+
+.advantages {
+  padding: 50px 0;
+  background-image: url("../../img/advantages-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .advantages .official-coop,
+  .advantages .full-equip {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+    width: 240px;
+    height: 240px;
+    text-align: center;
+    border: 10px solid #fbd34b; }
+  .advantages .text-block {
+    width: 260px;
+    height: 260px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 20px; }
