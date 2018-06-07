@@ -19,6 +19,12 @@
 @font-face {
   font-family: 'PF Din Text Pro';
   font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/pfdintextpro-medium-webfont.woff2") format("woff2"), url("../fonts/pfdintextpro-medium-webfont.woff2") format("woff"); }
+
+@font-face {
+  font-family: 'PF Din Text Pro';
+  font-style: normal;
   font-weight: 700;
   src: url("../fonts/pfdintextpro-bold-webfont.woff2") format("woff2"), url("../fonts/pfdintextpro-bold-webfont.woff2") format("woff"); }
 
@@ -162,7 +168,8 @@ body {
   background-repeat: no-repeat;
   padding: 50px 0; }
   .produced .caption {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-align: center; }
     .produced .caption P {
       margin-bottom: 0.5rem; }
     .produced .caption p:first-of-type {
@@ -231,7 +238,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat; }
   .advantages .caption {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-left: auto; }
     .advantages .caption h2 {
       font-size: 30px;
       font-weight: bold; }
@@ -239,19 +247,94 @@ body {
       color: #f3b200;
       font-size: 20px;
       font-weight: 500; }
-  .advantages .official-coop,
-  .advantages .full-equip {
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 20px;
-    text-transform: uppercase;
-    width: 240px;
-    height: 240px;
-    text-align: center;
-    border: 10px solid #fbd34b; }
+  .advantages .image-block {
+    position: relative; }
+    .advantages .image-block p {
+      color: #ffffff;
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 20px;
+      text-transform: uppercase;
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      width: 100%; }
   .advantages .text-block {
     width: 260px;
     height: 260px;
     font-size: 16px;
     font-weight: 500;
-    padding: 0 20px; }
+    line-height: 24px;
+    padding: 0 20px;
+    background: #ffffff; }
+  .advantages .official-coop,
+  .advantages .full-equip {
+    position: relative;
+    padding: 0;
+    font-weight: bold;
+    line-height: 20px;
+    text-transform: uppercase;
+    border: 10px solid #fbd34b; }
+  .advantages .official-coop::after {
+    content: '';
+    margin-left: 50%;
+    left: -20px;
+    position: absolute;
+    bottom: -50px;
+    border: 20px solid transparent;
+    border-top: 20px solid #fbd34b; }
+  .advantages .official-coop p {
+    padding-bottom: 103px;
+    position: relative;
+    margin: 0; }
+    .advantages .official-coop p::before {
+      content: '';
+      background-image: url("../../img/contract.png");
+      width: 83px;
+      height: 75px;
+      bottom: 0;
+      left: 83px;
+      background-repeat: no-repeat;
+      position: absolute; }
+  .advantages .full-equip::after {
+    content: '';
+    margin-left: 50%;
+    left: -20px;
+    position: absolute;
+    top: -50px;
+    border: 20px solid transparent;
+    border-bottom: 20px solid #fbd34b; }
+  .advantages .full-equip p {
+    padding-top: 122.99px;
+    position: relative;
+    margin: 0; }
+    .advantages .full-equip p::before {
+      content: '';
+      background-image: url("../../img/key.png");
+      width: 82px;
+      height: 97px;
+      top: 0;
+      left: 82px;
+      background-repeat: no-repeat;
+      position: absolute; }
+
+.problems {
+  padding: 50px 0; }
+  .problems .caption {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; }
+    .problems .caption h2 {
+      color: #292727;
+      font-size: 22px;
+      padding: 20px;
+      background-image: url("../../img/3-problem-caption.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-bottom: 0; }
+    .problems .caption p {
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.85);
+      color: #ffffff;
+      font-size: 36px;
+      margin-bottom: 0; }
