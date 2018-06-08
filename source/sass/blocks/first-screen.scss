@@ -13,7 +13,7 @@
 		content: '';
 		position: absolute;
 		width: 70%;
-		height: 100vh;
+		height: 99.5vh;
 		background-image: url('../../img/frame-yellow.svg');
 		background-position: 45% 50%;
 		background-repeat: no-repeat;
@@ -147,6 +147,13 @@
 			width: 305px;
 			height: 55px;
 			margin-bottom: 40px;
+			&:hover {
+				color: $yellow-darker;
+			}
+			&:active {
+				color: $white;
+				background: $black;
+			}
 		}
 	}
 }

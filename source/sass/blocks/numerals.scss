@@ -1,0 +1,100 @@
+.numerals {
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-bottom: 50px;
+	.caption {
+		padding-top: 50px;
+		padding-bottom: 100px;
+		background: $yellow-lighter;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 50px;
+			background: $black;
+			bottom: 0;
+			left: 0;
+		}
+		span {
+			font-size: 20px;
+		}
+		h2 {
+			font-size: 36px;
+		}
+	}
+	ul {
+		font-family: "Open Sans";
+		padding-left: 0;
+		margin-bottom: 0;
+		list-style-type: none;
+		margin-bottom: 65px;
+		li {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			flex-basis: 20%;
+			align-items: center;
+			position: relative;
+			padding: 0 15px;
+			padding-top: 50px;
+			&::before {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 60px;
+				top: -80px;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			&:nth-child(1)::before {
+				background-image: url('./../../img/numerals-item-1.png')
+			}
+			&:nth-child(2)::before {
+				background-image: url('./../../img/numerals-item-2.png')
+			}
+			&:nth-child(3)::before {
+				background-image: url('./../../img/numerals-item-3.png')
+			}
+			&:nth-child(4)::before {
+				background-image: url('./../../img/numerals-item-4.png')
+			}
+			&:nth-child(5)::before {
+				background-image: url('./../../img/numerals-item-5.png')
+			}
+			p {
+				margin-bottom: 0;
+				font-size: 14px;
+				color: #797878;
+				text-align: center;
+				&:last-of-type {
+					text-transform: lowercase;
+					margin-top: 5px;
+				}
+				&:first-of-type {
+					margin-bottom: 30px;
+				}
+			}
+			strong {
+				font-size: 72px;
+				line-height: 24.05px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+	button {
+		min-height: 55px;
+		background-color: $yellow-lighter;
+		color: #292727;
+		font-size: 16px;
+		line-height: 26px;
+		text-transform: uppercase;
+		font-weight: bold;
+		&:hover {
+			background-color: $yellow-darker;
+		}
+		&:active {
+			background-color: $yellow-lighter;
+		}
+	}
+}
