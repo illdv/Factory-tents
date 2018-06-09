@@ -219,36 +219,59 @@
 	</section>
 	<section class="virt-tour">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="virt-tour__caption ">
-						<h2>Виртуальная экскурсия </h2>
+			<div class="row no-gutters">
+				<div class="col-md-6 left-side">
+					<div class="caption ">
+						<h2>Виртуальная
+							<br> экскурсия </h2>
 						<p>на производство </p>
 						<p>поможет убедиться:</p>
 					</div>
 					<ul>
 						<li>
 							<strong>В отсутствии посредников</strong>
-							Мы – крупнейшее в РФ производство шатров и тентовых конструкций
+							<p>Мы – крупнейшее в РФ производство шатров и тентовых конструкций</p>
 						</li>
 						<li>
 							<strong>В профессионализме команды</strong>
-							В нашей компании есть собственный конструкторский отдел, где работают высококвалифицированные специалисты.
+							<p>В нашей компании есть собственный конструкторский отдел, где работают высококвалифицированные специалисты.</p>
 						</li>
 						<li>
 							<strong>В качестве оборудования
 							</strong>
-							В 2016 году было модернизировано производство – закуплена техника от лучших мировых производителей
+							<p>В 2016 году было модернизировано производство – закуплена техника от лучших мировых производителей</p>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="slider photo__production ">
+	<section class="photo-production">
+		<h2 class="caption text-center">
+			<span>фото</span>
+			<span>с производства</span>
+		</h2>
+
+
+
+		<div class="carousel_wrap">
+			<div id="waterwheel">
+
+				<img src="img/photo-production-item-1.jpg" id="item-1" />
+				<img src="img/photo-production-item-2.jpg" id="item-2" />
+				<img src="img/photo-production-item-3.jpg" id="item-3" />
+				<img src="img/photo-production-item-4.jpg" id="item-4" />
+				<img src="img/photo-production-item-5.jpg" id="item-5" />
+			</div>
+			<a id="prev" class="nav_button prev_button link pull-left" title="prev">&lt;</a>
+			<a id="next" class="nav_button next_button link pull-right" title="next">&gt;</a>
+		</div>
+
+
+
 
 	</section>
-	<section class="slider video__production ">
+	<section class="video-production">
 
 	</section>
 	<section class="principles ">
@@ -398,16 +421,34 @@
 			8 (800) 775-45-78 Заказать обратный звонок *Мы свяжемся с Вами в течение 1 часа
 		</div>
 	</footer>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
-	  crossorigin="anonymous "></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js " crossorigin="anonymous "></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
 	  crossorigin="anonymous "></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T "
 	  crossorigin="anonymous "></script>
+	<script type="text/javascript" src="js/jquery.waterwheelCarousel.min.js"></script>
 	<script>
 		$('.carousel').carousel({
 			interval: false
 		})
+	</script>
+	<script>
+		$(document).ready(function () {
+			var waterwheel = $("#waterwheel").waterwheelCarousel({
+				flankingItems: 3,
+				opacityMultiplier: 1,
+			});
+
+			$('#prev').bind('click', function () {
+				waterwheel.prev();
+				return false
+			});
+
+			$('#next').bind('click', function () {
+				waterwheel.next();
+				return false;
+			});
+		});
 	</script>
 </body>
 

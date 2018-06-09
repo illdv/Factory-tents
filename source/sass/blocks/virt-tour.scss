@@ -1,5 +1,78 @@
 .virt-tour {
 	padding: 50px 0;
-	background-image: url('../../img/firt-tour.jpg');
-	background: cover;
+	background-image: url('../../img/virt-tour-back.jpg');
+	background-repeat: no-repeat;
+	background-color: #f4f3f3;
+	background-position: right;
+	background-size: 50% 100%;
+	.left-side {
+		border-top: 50px solid $yellow-lighter;
+		border-left: 50px solid $yellow-lighter;
+		border-bottom: 50px solid $yellow-lighter;
+	}
+	.caption {
+		display: inline-block;
+		font-weight: bold;
+		margin-top: -50px;
+		background: #f4f3f3;
+		padding: 0 20px;
+		margin-left: 40px;
+		h2 {
+			font-size: 36px;
+			text-transform: uppercase;
+			margin-bottom: 0;
+		}
+		p {
+			font-size: 20px;
+			margin-bottom: 0;
+		}
+		p:first-of-type {
+			color: $yellow-darker;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	}
+	ul {
+		padding: 15px;
+		margin-bottom: 0;
+		list-style: none;
+		font-size: 18px;
+		li {
+			padding-left: 99px;
+			position: relative;
+			margin-bottom: 50px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			&::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 84px;
+				height: 84px;
+				background-color: $yellow-darker;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			&:first-child::before {
+				background-image: url('../../img/firt-tour-item-1.png');
+			}
+			&:nth-child(2):before {
+				background-image: url('../../img/firt-tour-item-2.png');
+			}
+			&:last-child::before {
+				background-image: url('../../img/firt-tour-item-3.png');
+			}
+			strong {
+				font-weight: bold;
+			}
+			p {
+				color: #757f8f;
+				font-weight: 400;
+				margin-bottom: 0;
+				margin-top: 2px;
+			}
+		}
+	}
 }
