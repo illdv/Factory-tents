@@ -1,0 +1,76 @@
+.principles {
+	padding: 50px 0;
+	background-image: url('./../../img/principles-back.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		width: 70%;
+		height: 100%;
+		top: 0px;
+		right: -7%;
+		transform: skew(-16deg);
+		background: rgba(0, 0, 0, .5);
+		background-position: right;
+	}
+	.caption {
+		margin-bottom: 100px;
+		p {
+			text-transform: uppercase;
+			&:first-of-type {
+				color: #fbd34b;
+				font-size: 36px;
+				font-weight: bold;
+			}
+			&:last-of-type {
+				color: $white;
+				font-size: 16px;
+				font-weight: 500;
+			}
+		}
+	}
+	ul {
+		list-style-type: none;
+		margin-bottom: 0;
+		padding-left: 0;
+		li {
+			display: flex;
+			p {
+				&:first-of-type {
+					display: flex;
+					align-items: center;
+					justify-content: flex-end;
+					font-weight: 700;
+					text-transform: uppercase;
+					background-repeat: no-repeat;
+					background-size: 100% auto;
+					background-position: center;
+					margin-right: 30px;
+					flex-grow: 1;
+					padding-right: 20px;
+				}
+				&:last-of-type {
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 23.91px;
+					color: $white;
+					flex-basis: 40%;
+				}
+			}
+		}
+		.back-1 {
+			background-image: url('./../../img/principles-1.png');
+			margin-left: -10%;
+		}
+		.back-2 {
+			background-image: url('./../../img/principles-2.png');
+			margin-left: -15%;
+		}
+		.back-3 {
+			background-image: url('./../../img/principles-3.png');
+			margin-left: -20%;
+		}
+	}
+}

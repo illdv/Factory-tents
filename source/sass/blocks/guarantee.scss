@@ -1,0 +1,40 @@
+.guarantee {
+	padding: 50px 0;
+	background-image: url('./../../img/guarantee-back.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	text-transform: uppercase;
+	.right-side {
+		border-top: 50px solid $yellow-lighter;
+		border-right: 50px solid $yellow-lighter;
+		border-bottom: 50px solid $yellow-lighter;
+	}
+	.caption {
+		p {
+			&:first-of-type {
+				color: #292727;
+				font-size: 36px;
+				font-weight: bold;
+			}
+			&:last-of-type {
+				color: $yellow-darker;
+				font-size: 20px;
+				font-weight: 500;
+			}
+		}
+	}
+	ul {
+		list-style-type: none;
+		padding-left: 0;
+		margin-bottom: 0;
+		li {
+			font-weight: 500;
+		}
+		strong {
+			font-family: "Open Sans";
+			font-size: 60px;
+			font-weight: bold;
+		}
+	}
+}

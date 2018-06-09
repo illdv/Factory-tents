@@ -17,16 +17,16 @@
 		background: #f4f3f3;
 		padding: 0 20px;
 		margin-left: 40px;
-		h2 {
-			font-size: 36px;
-			text-transform: uppercase;
-			margin-bottom: 0;
-		}
 		p {
 			font-size: 20px;
 			margin-bottom: 0;
 		}
-		p:first-of-type {
+		p:first-child {
+			font-size: 36px;
+			text-transform: uppercase;
+			margin-bottom: 0;
+		}
+		p:nth-child(2) {
 			color: $yellow-darker;
 			font-weight: bold;
 			text-transform: uppercase;
