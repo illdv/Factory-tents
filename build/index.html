@@ -15,7 +15,7 @@
 		<div class="container d-flex flex-column justify-content-between">
 			<header class="row  align-items-center">
 				<div class="logo col-md-3">
-					<img src="./img/icons/logo.svg">
+					<img class="img-fluid" alt="logo" src="./img/icons/logo.svg">
 				</div>
 				<p class="experience col">
 					Опыт работы:
@@ -58,7 +58,6 @@
 				</div>
 			</div>
 	</section>
-
 	<section class="produced">
 		<div class="container">
 			<h2 class="caption">
@@ -79,15 +78,15 @@
 					<li>Для выставок, фестивалей
 						<br> и промоакций</li>
 				</ul>
-				<div id="carouselExampleIndicators" class="carousel slide col" data-ride="carousel">
+				<div id="carouselProducedIndicators" class="carousel slide col" data-ride="carousel-produced">
 					<ol class="carousel-indicators">
-						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-						<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-						<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-						<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-						<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+						<li data-target="#carouselProducedIndicators" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselProducedIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselProducedIndicators" data-slide-to="2"></li>
+						<li data-target="#carouselProducedIndicators" data-slide-to="3"></li>
+						<li data-target="#carouselProducedIndicators" data-slide-to="4"></li>
+						<li data-target="#carouselProducedIndicators" data-slide-to="5"></li>
+						<li data-target="#carouselProducedIndicators" data-slide-to="6"></li>
 					</ol>
 					<div class="carousel-inner">
 						<div class="carousel-item active ">
@@ -113,6 +112,7 @@
 						</div>
 					</div>
 				</div>
+
 			</div>
 
 
@@ -347,53 +347,130 @@
 			</div>
 		</div>
 	</section>
-	<section class="type-tents ">
-		<div class="type-tents__caption ">
-			<p>5 основных типов </p>
-			<p>шатров и тентовых конструкций:</p>
-			<div class="type-tents__gallery ">
-				<ul>
-					<li>
-						мобильные
-						<button>заказать</button>
-					</li>
-					<li>
-						арочные
-						<button>заказать</button>
-					</li>
-					<li>
-						сферические
-						<button>заказать</button>
-					</li>
-					<li>
-						пагода
-						<button>заказать</button>
-					</li>
-					<li>
-						класические
-						<button>заказать</button>
-					</li>
-				</ul>
+	<section class="type-tents">
+		<div class="container">
+			<div class="row justify-content-end">
+				<div class="left-side col-md-5 d-flex flex-column justify-content-between">
+					<h2 class="caption">
+						<p>5 основных типов </p>
+						<p>шатров и тентовых конструкций:</p>
+					</h2>
+					<div class="item align-self-end">
+						<img class="img-fluid" src="./img/type-tent-3.png" alt="сферические">
+						<div class="content-img">
+							<span>сферические</span>
+							<button class="btn">заказать</button>
+						</div>
+					</div>
+				</div>
+				<div class="right-side col-md-6 d-flex flex-wrap justify-content-between">
+					<div class="item">
+						<img class="img-fluid" src="./img/type-tent-1.png " alt="мобильные ">
+						<div class="content-img">
+							<span>мобильные</span>
+							<button class="btn ">заказать</button>
+						</div>
+					</div>
+					<div class="item">
+						<img class="img-fluid " src="./img/type-tent-2.png " alt="арочные ">
+						<div class="content-img">
+							<span>арочные</span>
+							<button class="btn ">заказать</button>
+						</div>
+					</div>
+
+					<div class="item spacing">
+						<img class="img-fluid " src="./img/type-tent-4.png " alt="пагода ">
+						<div class="content-img">
+							<span>пагода</span>
+							<button class="btn ">заказать</button>
+						</div>
+					</div>
+					<div class="item spacing">
+						<img class="img-fluid " src="./img/type-tent-5.png " alt="классические ">
+						<div class="content-img">
+							<span>классические</span>
+							<button class="btn ">заказать</button>
+						</div>
+					</div>
+				</div>
 			</div>
+			<div class="under row align-items-center left-side">
+				<div class="col-sm-8 ">
+					<p>Не знаете, какой тип конструкции подойдет для Вашей задачи?</p>
+					<p>Закажите
+						<strong>бесплатную консультацию</strong> – наш специалист подберет нужную модель.</p>
+				</div>
+				<div class=" col-sm-4 right-side">
+					<button class="btn ">получить бесплатную консультацию</button>
+				</div>
+			</div>
+
 		</div>
-		<div class="type-tents__under ">
-			<p>Не знаете, какой тип конструкции подойдет для Вашей задачи?</p>
-			<p>Закажите бесплатную консультацию – наш специалист подберет нужную модель.</p>
-			<button>получить бесплатную консультацию</button>
-		</div>
+
 	</section>
-	<section class="standing ">
-		<div class="standing__caption ">
-			<p>откажитесь</p>
-			<p>от сотрудничества с малоопытными компаниями.
-			</p>
-			<p>Выбирайте опытного партнера, который производит шатры в 100% соответствии с нормативами ГОСТ, СНиП и международными стандартами
-				качества.
-			</p>
-			<div class="slider ">
+	<section class="standing">
+		<div class="container">
+			<div class="row">
+				<div class="pl-0 pr-0 offset-md-6 col-md-6">
+					<h2 class="caption">
+						<span>откажитесь</span>
+						<p>от сотрудничества с малоопытными компаниями.
+						</p>
+						<p>Выбирайте опытного партнера, который производит шатры в 100% соответствии с нормативами ГОСТ, СНиП и международными
+							стандартами качества.
+						</p>
+					</h2>
+
+					<div id="carouselStandingIndicators" class="carousel slide" data-ride="carousel-standing">
+						<ol class="carousel-indicators">
+							<li data-target="#carouselStandingIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselStandingIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselStandingIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselStandingIndicators" data-slide-to="3"></li>
+							<li data-target="#carouselStandingIndicators" data-slide-to="4"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="d-flex justify-content-center">
+									<img class="img-fluid" src="./img/standing-sert-1.png" alt="First sert">
+									<img class="img-fluid" src="./img/standing-sert-2.png" alt="Second sert">
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="d-flex justify-content-center">
+									<img class="img-fluid" src="./img/standing-sert-1.png" alt="First sert">
+									<img class="img-fluid" src="./img/standing-sert-2.png" alt="Second sert">
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="d-flex justify-content-center">
+									<img class="img-fluid" src="./img/standing-sert-1.png" alt="First sert">
+									<img class="img-fluid" src="./img/standing-sert-2.png" alt="Second sert">
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="d-flex justify-content-center">
+									<img class="img-fluid" src="./img/standing-sert-1.png" alt="First sert">
+									<img class="img-fluid" src="./img/standing-sert-2.png" alt="Second sert">
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="d-flex justify-content-center">
+									<img class="img-fluid" src="./img/standing-sert-1.png" alt="First sert">
+									<img class="img-fluid" src="./img/standing-sert-2.png" alt="Second sert">
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
 
 			</div>
 		</div>
+
+
 	</section>
 	<section class="example-photo ">
 		<div class="example__caption ">
@@ -462,15 +539,18 @@
 	  crossorigin="anonymous "></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T "
 	  crossorigin="anonymous "></script>
-	<script type="text/javascript" src="js/jquery.waterwheelCarousel.min.js"></script>
+	<script type="text/javascript " src="js/jquery.waterwheelCarousel.min.js "></script>
 	<script>
-		$('.carousel').carousel({
+		$('.carousel-produced').carousel({
+			interval: false
+		})
+		$('.carousel-standing').carousel({
 			interval: false
 		})
 	</script>
 	<script>
 		$(document).ready(function () {
-			var waterwheel = $("#waterwheel").waterwheelCarousel({
+			var waterwheel = $("#waterwheel ").waterwheelCarousel({
 				flankingItems: 3,
 				opacityMultiplier: 1,
 				separation: 200,

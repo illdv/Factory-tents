@@ -91,15 +91,15 @@ body {
       line-height: 26.04px;
       letter-spacing: 0.35px;
       border-bottom: 1px dotted #fbd34b;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       cursor: pointer; }
       .first-screen header .request:hover {
         border-bottom: none;
-        opacity: 0.9;
+        color: #f3b200;
         padding-bottom: 1px; }
       .first-screen header .request:active {
         opacity: 1;
-        color: #f3b200; }
+        color: #fbd34b; }
     .first-screen header .footnote {
       color: #ffffff;
       opacity: 0.9;
@@ -154,15 +154,18 @@ body {
       opacity: 0.9;
       text-transform: capitalize; }
     .first-screen .rhomb button {
+      width: 305px;
+      margin-bottom: 40px;
       color: #ffffff;
       background: #292727;
       font-size: 16px;
       line-height: 26px;
-      width: 305px;
-      height: 55px;
-      margin-bottom: 40px; }
+      min-height: 55px;
+      font-weight: 500;
+      text-transform: uppercase; }
       .first-screen .rhomb button:hover {
-        color: #f3b200; }
+        color: #f3b200;
+        background: black; }
       .first-screen .rhomb button:active {
         color: #ffffff;
         background: #292727; }
@@ -232,8 +235,8 @@ body {
       height: 10px;
       border-radius: 50%;
       background-color: #c6c6c6; }
-    .produced .carousel .carousel-indicators li.active {
-      background-color: #fbd34b; }
+      .produced .carousel .carousel-indicators li.active {
+        background-color: #fbd34b; }
   .produced .carousel .carousel-inner {
     height: 370px; }
 
@@ -496,9 +499,11 @@ body {
     text-transform: uppercase;
     font-weight: bold; }
     .numerals button:hover {
-      background-color: #f3b200; }
+      background-color: #f3b200;
+      color: black; }
     .numerals button:active {
-      background-color: #fbd34b; }
+      background-color: #fbd34b;
+      color: #292727; }
 
 .virt-tour {
   padding: 50px 0;
@@ -803,3 +808,123 @@ body {
       font-size: 60px;
       font-weight: bold;
       padding-right: 5px; }
+
+.type-tents {
+  padding: 50px 0;
+  background-image: url("../../img/type-tents.back.png");
+  background-repeat: no-repeat;
+  background-position: center; }
+  .type-tents .caption p {
+    text-transform: uppercase; }
+    .type-tents .caption p:first-of-type {
+      color: #202e45;
+      font-size: 36px;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .type-tents .caption p:last-of-type {
+      font-size: 20px;
+      font-weight: 500;
+      color: #292727; }
+  .type-tents .left-side {
+    padding-left: 0; }
+  .type-tents .right-side {
+    padding-right: 0; }
+  .type-tents .spacing {
+    margin-top: 30px; }
+  .type-tents .item {
+    position: relative; }
+    .type-tents .item img {
+      border: 10px solid #fbd34b; }
+    .type-tents .item .content-img {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 20;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between; }
+      .type-tents .item .content-img span {
+        font-size: 18px;
+        margin-top: 20px;
+        font-weight: 600;
+        text-transform: uppercase; }
+  .type-tents button {
+    width: 150px;
+    color: #ffffff;
+    background: #292727;
+    font-size: 16px;
+    line-height: 26px;
+    min-height: 55px;
+    font-weight: 500;
+    text-transform: uppercase; }
+    .type-tents button:hover {
+      color: #f3b200;
+      background: black; }
+    .type-tents button:active {
+      color: #ffffff;
+      background: #292727; }
+  .type-tents .under {
+    margin-top: 60px;
+    font-size: 18px; }
+    .type-tents .under p {
+      margin-bottom: 0; }
+      .type-tents .under p:first-of-type {
+        font-weight: bold;
+        text-transform: uppercase; }
+      .type-tents .under p:last-of-type {
+        font-weight: 500; }
+        .type-tents .under p:last-of-type strong {
+          text-transform: uppercase;
+          color: #f3b200; }
+    .type-tents .under button {
+      width: 360px;
+      min-height: 55px;
+      color: #fbd34b;
+      font-weight: 400;
+      text-transform: uppercase;
+      background: #292727; }
+      .type-tents .under button:hover {
+        color: #f3b200;
+        background: black; }
+      .type-tents .under button:active {
+        color: #fbd34b;
+        background: #292727; }
+
+.standing {
+  padding: 50px 0;
+  background-color: #f4f3f3;
+  background-image: url("../../img/standing-back.jpg");
+  background-repeat: no-repeat;
+  background-position: center; }
+  .standing .caption {
+    margin-bottom: 130px;
+    -webkit-transform: translateX(-55px);
+            transform: translateX(-55px); }
+    .standing .caption span {
+      display: block;
+      font-size: 36px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 5px; }
+    .standing .caption p:first-of-type {
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 30px; }
+    .standing .caption p:last-of-type {
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 0; }
+  .standing .carousel .carousel-indicators {
+    margin-bottom: 0;
+    bottom: 0; }
+    .standing .carousel .carousel-indicators li {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #c6c6c6; }
+      .standing .carousel .carousel-indicators li.active {
+        background-color: #fbd34b; }

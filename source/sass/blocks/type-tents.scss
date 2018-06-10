@@ -1,0 +1,94 @@
+.type-tents {
+	padding: 50px 0;
+	background-image: url('../../img/type-tents.back.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	.caption {
+		p {
+			text-transform: uppercase;
+			&:first-of-type {
+				color: #202e45;
+				font-size: 36px;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+			&:last-of-type {
+				font-size: 20px;
+				font-weight: 500;
+				color: $black;
+			}
+		}
+	}
+	.left-side,
+		{
+		padding-left: 0;
+	}
+	.right-side {
+		padding-right: 0;
+	}
+	.spacing {
+		margin-top: 30px;
+	}
+	.item {
+		position: relative;
+		img {
+			border: 10px solid $yellow-lighter;
+		}
+		.content-img {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			z-index: 20;
+			top: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			span {
+				font-size: 18px;
+				margin-top: 20px;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+		}
+	}
+	button {
+		width: 150px;
+		@include btn-bw
+	}
+	.under {
+		margin-top: 60px;
+		font-size: 18px;
+		p {
+			margin-bottom: 0;
+			&:first-of-type {
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+			&:last-of-type {
+				font-weight: 500;
+				strong {
+					text-transform: uppercase;
+					color: $yellow-darker;
+				}
+			}
+		}
+		button {
+			width: 360px;
+			min-height: 55px;
+			color: $yellow-lighter;
+			font-weight: 400;
+			text-transform: uppercase;
+			background: $black;
+			&:hover {
+				color: $yellow-darker;
+				background: black;
+			}
+			&:active {
+				color: $yellow-lighter;
+				background: $black;
+			}
+		}
+	}
+}

@@ -71,19 +71,7 @@
 		}
 	}
 	.carousel {
-		.carousel-indicators {
-			margin-bottom: 0;
-			bottom: 0;
-			li {
-				width: 10px;
-				height: 10px;
-				border-radius: 50%;
-				background-color: #c6c6c6;
-			}
-			li.active {
-				background-color: $yellow-lighter;
-			}
-		}
+		@include carousel-indicators;
 		.carousel-inner {
 			height: 370px;
 		}

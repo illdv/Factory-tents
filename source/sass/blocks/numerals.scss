@@ -92,9 +92,11 @@
 		font-weight: bold;
 		&:hover {
 			background-color: $yellow-darker;
+			color: black;
 		}
 		&:active {
 			background-color: $yellow-lighter;
+			color: #292727;
 		}
 	}
 }

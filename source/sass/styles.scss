@@ -1,6 +1,7 @@
 @import "fonts.scss";
 @import "variables.scss";
 @import "common.scss";
+@import "mixins.scss";
 @import "./blocks/first-screen";
 @import "./blocks/produced";
 @import "./blocks/advantages";
@@ -11,3 +12,5 @@
 @import "./blocks/video-production.scss";
 @import "./blocks/principles.scss";
 @import "./blocks/guarantee.scss";
+@import "./blocks/type-tents.scss";
+@import "./blocks/standing.scss";
