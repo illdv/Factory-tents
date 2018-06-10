@@ -1,9 +1,9 @@
 .type-tents {
 	padding: 50px 0;
 	background-image: url('../../img/type-tents.back.png');
-	background-repeat: no-repeat;
+	background-size: cover;
 	background-position: center;
-	background-size: 100% auto;
+	background-repeat: no-repeat;
 	.caption {
 		p {
 			text-transform: uppercase;

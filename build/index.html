@@ -12,7 +12,7 @@
 
 <body>
 	<section class="first-screen">
-		<div class="container d-flex flex-column justify-content-between">
+		<div class="container">
 			<header class="row  align-items-center">
 				<div class="logo col">
 					<img class="img-fluid" alt="logo" src="./img/icons/logo.svg">
@@ -21,7 +21,7 @@
 					Опыт работы:
 					<span>более 10 лет</span>
 				</p>
-				<div class="col-md-3 row flex-column align-items-end justify-content-between">
+				<div class="row flex-column align-items-end justify-content-between">
 					<a href="tel:+78007754578" class="phone">8 (800) 775-45-78</a>
 					<div class="request">Заказать обратный звонок</div>
 					<div>
@@ -34,21 +34,22 @@
 			<div class='caption'>
 				<h1>Производство шатров</h1>
 				<h2>полного цикла №1 в России:</h2>
-				<p>от проектирования до продажи, аренды и монтажа</p>
+				<p>от проектирования до продажи,
+					<br> аренды и монтажа</p>
 			</div>
-			<div class="row background">
+			<div class="row flex-column">
 				<ul class="triggers list-unstyled">
-					<li class="first-screen__triggers-elem--1 ">
+					<li class="triggers-elem-1">
 						Бесплатный 3D-проект будущего шатра
 					</li>
-					<li class="first-screen__triggers-elem--2 ">
+					<li class="triggers-elem-2">
 						Более 500 типовых шатров всегда в наличии
 					</li>
-					<li class="first-screen__triggers-elem--3 ">
+					<li class="triggers-elem-3">
 						Доставка в любой регион РФ
 					</li>
 				</ul>
-				<div class="rhomb row align-items-center flex-column justify-content-end ">
+				<div class="rhomb row align-items-center flex-column ">
 					<span>БЕСПЛАТНО</span>
 					<p>предоставим и установим
 						<br> готовый шатер, если
@@ -672,7 +673,7 @@
 					</p>
 				</h2>
 				<p class="text-block">Оставьте заявку прямо сейчас – мы свяжемся с Вами в течение 1 часа. </p>
-				<button class="btn">Оставить заявку</butto>
+				<button data-toggle="modal" data-target="#exampleModalCenter" class="btn">Оставить заявку</button>
 	</section>
 	</div>
 	</div>
@@ -703,6 +704,29 @@
 		</div>
 
 	</footer>
+
+
+
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js " crossorigin="anonymous "></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
 	  crossorigin="anonymous "></script>

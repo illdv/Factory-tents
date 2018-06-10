@@ -1,12 +1,16 @@
 .produced {
 	background-image: url('../../img/background-2.png');
-	background-size: contain;
+	background-size: cover;
 	background-position: bottom;
 	background-repeat: no-repeat;
-	padding: 50px 0;
+	padding-bottom: 50px;
+	margin-top: -100px;
+	z-index: 2; // transform: translateY(-130px);
 	.caption {
 		text-transform: uppercase;
 		text-align: center;
+		z-index: 2;
+		position: relative;
 		P {
 			margin-bottom: 0.5rem;
 		}
