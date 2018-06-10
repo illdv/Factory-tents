@@ -36,50 +36,13 @@
 			color: $white;
 			font-weight: bold;
 			font-size: 16px;
+			flex-grow: 2;
 			span {
 				color: $yellow-lighter;
 				text-transform: uppercase
 			}
 		}
-		.phone {
-			font-family: "Open Sans";
-			font-size: 22px;
-			font-weight: 300;
-			line-height: 26.04px;
-			color: $white;
-			text-decoration: none;
-			&:hover {
-				opacity: 0.8;
-			}
-			&:active {
-				opacity: 1;
-			}
-		}
-		.request {
-			color: $yellow-lighter;
-			font-weight: 500;
-			line-height: 26.04px;
-			letter-spacing: 0.35px;
-			border-bottom: 1px dotted $yellow-lighter;
-			margin-bottom: 10px;
-			cursor: pointer;
-			&:hover {
-				border-bottom: none;
-				color: $yellow-darker;
-				padding-bottom: 1px;
-			}
-			&:active {
-				opacity: 1;
-				color: $yellow-lighter
-			}
-		}
-		.footnote {
-			color: $white;
-			opacity: 0.9;
-			font-size: 12px;
-			font-weight: 400;
-			letter-spacing: 0.3px;
-		}
+		@include callback
 	}
 	.caption {
 		text-transform: uppercase;

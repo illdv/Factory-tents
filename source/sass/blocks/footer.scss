@@ -1,0 +1,27 @@
+footer {
+	padding: 30px 0;
+	background-color: #2a2c30;
+	.privacy-policy {
+		margin-top: 15px;
+		margin-bottom: 0;
+		display: inline-block;
+		vertical-align: middle;
+		font-family: "Open Sans";
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 25.89px;
+		color: #9aa2b2;
+		letter-spacing: 0.32px;
+		border-bottom: 1px dotted #9aa2b2;
+	}
+	.copyright {
+		color: #ffffff;
+		font-family: "Open Sans";
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 25.89px;
+		letter-spacing: 0.32px;
+		margin-bottom: 0;
+	}
+	@include callback;
+}

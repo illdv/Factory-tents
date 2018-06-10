@@ -70,7 +70,8 @@ body {
     .first-screen header .experience {
       color: #ffffff;
       font-weight: bold;
-      font-size: 16px; }
+      font-size: 16px;
+      flex-grow: 2; }
       .first-screen header .experience span {
         color: #fbd34b;
         text-transform: uppercase; }
@@ -491,8 +492,9 @@ body {
         line-height: 24.05px;
         margin-bottom: 30px; }
   .numerals button {
+    background-color: #ffc500;
+    background-color: #ffc500;
     min-height: 55px;
-    background-color: #fbd34b;
     color: #292727;
     font-size: 16px;
     line-height: 26px;
@@ -502,7 +504,7 @@ body {
       background-color: #f3b200;
       color: black; }
     .numerals button:active {
-      background-color: #fbd34b;
+      background-color: #ffc500;
       color: #292727; }
 
 .virt-tour {
@@ -813,7 +815,8 @@ body {
   padding: 50px 0;
   background-image: url("../../img/type-tents.back.png");
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  background-size: 100% auto; }
   .type-tents .caption p {
     text-transform: uppercase; }
     .type-tents .caption p:first-of-type {
@@ -898,7 +901,8 @@ body {
   background-color: #f4f3f3;
   background-image: url("../../img/standing-back.jpg");
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: left;
+  background-size: 100% 100%; }
   .standing .caption {
     margin-bottom: 130px;
     -webkit-transform: translateX(-55px);
@@ -928,3 +932,246 @@ body {
       background-color: #c6c6c6; }
       .standing .carousel .carousel-indicators li.active {
         background-color: #fbd34b; }
+
+.example-photo {
+  padding-top: 50px;
+  padding-bottom: 70px;
+  background-image: url("../../img/example-photo-back.png");
+  background-repeat: no-repeat;
+  background-position: center; }
+  .example-photo .caption {
+    margin-bottom: 50px; }
+    .example-photo .caption p {
+      margin-bottom: 0;
+      text-transform: uppercase; }
+      .example-photo .caption p:first-of-type {
+        color: #f3b200;
+        font-size: 20px;
+        font-weight: 500; }
+      .example-photo .caption p:nth-child(2) {
+        font-size: 36px;
+        font-weight: bold; }
+      .example-photo .caption p:last-of-type {
+        font-size: 20px;
+        font-weight: 500; }
+  .example-photo .carousel .carousel-indicators {
+    margin-bottom: 0;
+    bottom: -20px; }
+    .example-photo .carousel .carousel-indicators li {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #c6c6c6; }
+      .example-photo .carousel .carousel-indicators li.active {
+        background-color: #fbd34b; }
+
+.reviews {
+  background-image: url("./../../img/reviews-back.jpg");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+  .reviews::before {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 50%;
+    top: 0;
+    right: 0; }
+  .reviews .caption {
+    position: relative;
+    z-index: 2;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .reviews .caption::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 25%;
+      height: 15%;
+      width: 70px;
+      background-color: #fbd34b;
+      z-index: -1; }
+    .reviews .caption::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 25%;
+      height: 60%;
+      width: 70px;
+      background-color: #fbd34b;
+      z-index: -1; }
+    .reviews .caption p {
+      text-transform: uppercase;
+      margin-bottom: 0; }
+      .reviews .caption p:first-of-type {
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 500; }
+      .reviews .caption p:nth-child(2) {
+        font-size: 36px;
+        font-weight: bold; }
+      .reviews .caption p:last-of-type {
+        font-size: 20px;
+        font-weight: 400; }
+  .reviews .carousel {
+    padding-bottom: 40px;
+    margin-bottom: 50px; }
+    .reviews .carousel .carousel-item {
+      padding-top: 100px; }
+      .reviews .carousel .carousel-item img {
+        border-radius: 50%;
+        margin-bottom: 15px; }
+      .reviews .carousel .carousel-item .text-block {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 15px;
+        width: 50%; }
+      .reviews .carousel .carousel-item .sigh {
+        color: #fbd34b;
+        font-style: italic;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 0; }
+    .reviews .carousel .carousel-indicators {
+      bottom: -0;
+      margin-bottom: 0; }
+      .reviews .carousel .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #c6c6c6; }
+        .reviews .carousel .carousel-indicators li.active {
+          background-color: #fbd34b; }
+
+.example-video {
+  padding: 50px 0;
+  background-image: url("../../img/example-video-back.png");
+  background-repeat: no-repeat;
+  background-size: 100 auto;
+  background-position: center; }
+  .example-video .caption {
+    margin-bottom: 50px; }
+    .example-video .caption p {
+      text-transform: uppercase; }
+      .example-video .caption p:first-of-type {
+        font-size: 36px;
+        font-weight: bold; }
+      .example-video .caption p:last-of-type {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 0; }
+  .example-video .gallery-items {
+    color: #202e45;
+    font-family: "Open Sans"; }
+    .example-video .gallery-items h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-top: 15px; }
+      .example-video .gallery-items h3 p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-bottom: 0; }
+
+.feedback {
+  padding: 80px 0;
+  background-image: url("../../img/feedback-back.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: cover; }
+  .feedback .caption {
+    margin-bottom: 90px; }
+    .feedback .caption p {
+      color: #ffffff;
+      text-transform: uppercase; }
+      .feedback .caption p:first-of-type {
+        font-size: 48px;
+        font-weight: bold;
+        text-transform: uppercase; }
+      .feedback .caption p:last-of-type {
+        font-size: 24px;
+        font-weight: 400; }
+  .feedback .text-block {
+    color: #fbd34b;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 70px; }
+  .feedback button {
+    width: 30%;
+    background-color: #ffc500;
+    min-height: 55px;
+    color: #292727;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: bold; }
+    .feedback button:hover {
+      background-color: #f3b200;
+      color: black; }
+    .feedback button:active {
+      background-color: #ffc500;
+      color: #292727; }
+
+footer {
+  padding: 30px 0;
+  background-color: #2a2c30; }
+  footer .privacy-policy {
+    margin-top: 15px;
+    margin-bottom: 0;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25.89px;
+    color: #9aa2b2;
+    letter-spacing: 0.32px;
+    border-bottom: 1px dotted #9aa2b2; }
+  footer .copyright {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25.89px;
+    letter-spacing: 0.32px;
+    margin-bottom: 0; }
+  footer .phone {
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 26.04px;
+    color: #ffffff;
+    text-decoration: none; }
+    footer .phone:hover {
+      opacity: 0.8; }
+    footer .phone:active {
+      opacity: 1; }
+  footer .request {
+    color: #fbd34b;
+    font-weight: 500;
+    line-height: 26.04px;
+    letter-spacing: 0.35px;
+    border-bottom: 1px dotted #fbd34b;
+    margin-bottom: 10px;
+    cursor: pointer; }
+    footer .request:hover {
+      border-bottom: none;
+      color: #f3b200;
+      padding-bottom: 1px; }
+    footer .request:active {
+      opacity: 1;
+      color: #fbd34b; }
+  footer .footnote {
+    color: #ffffff;
+    opacity: 0.9;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px; }

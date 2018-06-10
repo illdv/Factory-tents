@@ -3,7 +3,8 @@
 	background-color: #f4f3f3;
 	background-image: url('../../img/standing-back.jpg');
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: left;
+	background-size: 100% 100%;
 	.caption {
 		margin-bottom: 130px;
 		transform: translateX(-55px);
@@ -29,6 +30,10 @@
 		}
 	}
 	.carousel {
-		@include carousel-indicators
+		.carousel-indicators {
+			margin-bottom: 0;
+			bottom: 0;
+			@include carousel-indicators;
+		}
 	}
 }

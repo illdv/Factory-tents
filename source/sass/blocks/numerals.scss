@@ -83,20 +83,7 @@
 		}
 	}
 	button {
-		min-height: 55px;
-		background-color: $yellow-lighter;
-		color: #292727;
-		font-size: 16px;
-		line-height: 26px;
-		text-transform: uppercase;
-		font-weight: bold;
-		&:hover {
-			background-color: $yellow-darker;
-			color: black;
-		}
-		&:active {
-			background-color: $yellow-lighter;
-			color: #292727;
-		}
+		background-color: #ffc500;
+		@include btn-yellow;
 	}
 }

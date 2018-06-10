@@ -14,18 +14,21 @@
 	<section class="first-screen">
 		<div class="container d-flex flex-column justify-content-between">
 			<header class="row  align-items-center">
-				<div class="logo col-md-3">
+				<div class="logo col">
 					<img class="img-fluid" alt="logo" src="./img/icons/logo.svg">
 				</div>
 				<p class="experience col">
 					Опыт работы:
 					<span>более 10 лет</span>
 				</p>
-				<div class="col-md-3 row flex-column align-items-end">
+				<div class="col-md-3 row flex-column align-items-end justify-content-between">
 					<a href="tel:+78007754578" class="phone">8 (800) 775-45-78</a>
 					<div class="request">Заказать обратный звонок</div>
-					<div class="footnote">*Мы свяжемся с Вами</div>
-					<div class="footnote">в течение 1 часа</div>
+					<div>
+						<div class="footnote">*Мы свяжемся с Вами</div>
+						<div class="footnote text-right">в течение 1 часа</div>
+					</div>
+
 				</div>
 			</header>
 			<div class='caption'>
@@ -472,67 +475,233 @@
 
 
 	</section>
-	<section class="example-photo ">
-		<div class="example__caption ">
+	<section class="example-photo">
+		<h2 class="caption text-center">
 			<p>Говорить могут многие, а мы привыкли подтверждать слова делами.</p>
 			<p> Взгляните на готовые работы, </p>
 			<p> чтобы убедиться в аккуратности и эстетичности конструкций.</p>
-		</div>
-		<div class="example__gallery slider ">
+		</h2>
+		<div class="container">
+			<div class="row">
+				<div id="carouselExamplePhotoIndicators" class="carousel slide w-100" data-ride="carousel-example-photo">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExamplePhotoIndicators" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExamplePhotoIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselExamplePhotoIndicators" data-slide-to="2"></li>
+						<li data-target="#carouselExamplePhotoIndicators" data-slide-to="3"></li>
+						<li data-target="#carouselExamplePhotoIndicators" data-slide-to="4"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="d-flex justify-content-between">
+								<img class="img-fluid" src="./img/example-photo-1.jpg" alt="example-photo-1">
+								<img class="img-fluid" src="./img/example-photo-2.png" alt="example-photo-2">
+								<img class="img-fluid" src="./img/example-photo-3.png" alt="example-photo-3">
+							</div>
+						</div>
+						<div class="carousel-item ">
+							<div class="d-flex justify-content-between">
+								<img class="img-fluid" src="./img/example-photo-1.jpg" alt="example-photo-1">
+								<img class="img-fluid" src="./img/example-photo-2.png" alt="example-photo-2">
+								<img class="img-fluid" src="./img/example-photo-3.png" alt="example-photo-3">
+							</div>
+						</div>
 
-		</div>
-	</section>
-	<section class="reviews ">
-		<div class="reviews__caption ">
-			<p>узнайте, что говорят</p>
-			<p>о нас клиенты</p>
-			<p>чтобы убедиться в нашей надежности</p>
-		</div>
-		<div class="slider ">
+						<div class="carousel-item ">
+							<div class="d-flex justify-content-between">
+								<img class="img-fluid" src="./img/example-photo-1.jpg" alt="example-photo-1">
+								<img class="img-fluid" src="./img/example-photo-2.png" alt="example-photo-2">
+								<img class="img-fluid" src="./img/example-photo-3.png" alt="example-photo-3">
+							</div>
+						</div>
+						<div class="carousel-item ">
+							<div class="d-flex justify-content-between">
+								<img class="img-fluid" src="./img/example-photo-1.jpg" alt="example-photo-1">
+								<img class="img-fluid" src="./img/example-photo-2.png" alt="example-photo-2">
+								<img class="img-fluid" src="./img/example-photo-3.png" alt="example-photo-3">
+							</div>
+						</div>
+						<div class="carousel-item ">
+							<div class="d-flex justify-content-between">
+								<img class="img-fluid" src="./img/example-photo-1.jpg" alt="example-photo-1">
+								<img class="img-fluid" src="./img/example-photo-2.png" alt="example-photo-2">
+								<img class="img-fluid" src="./img/example-photo-3.png" alt="example-photo-3">
+							</div>
+						</div>
+					</div>
+				</div>
 
-		</div>
-	</section>
-	<section class="example-video ">
-		<div class="example-video__caption ">
-			<p>Посмотрите на шатры &laquo;в деле&raquo;, </p>
-			<p>чтобы убедиться в качестве наших работ</p>
-		</div>
-		<div class="example-video__gallery ">
-			<div class="example-video__gallery-item--1 ">
-				<h4>Заголовок видео</h4>
-
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
 			</div>
-			<div class="example-video__gallery-item--2 ">
-				<h4>Заголовок видео</h4>
+		</div>
+	</section>
+	<section class="reviews">
+		<div class="container">
+			<div class="row">
+				<div class="caption col-md-6 pl-0 pr-0">
+					<div class="text-block">
+						<p>узнайте, что говорят</p>
+						<p>о нас клиенты</p>
+						<p>чтобы убедиться в нашей надежности</p>
+					</div>
+				</div>
+				<div class="col-md-6 pl-0 pr-0">
 
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-			</div>
-			<div class="example-video__gallery-item--3 ">
-				<h4>Заголовок видео</h4>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+					<div id="carouselReviewsIndicators" class="carousel slide " data-ride="carousel-reviews">
+						<ol class="carousel-indicators">
+							<li data-target="#carouselReviewsIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselReviewsIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselReviewsIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselReviewsIndicators" data-slide-to="3"></li>
+							<li data-target="#carouselReviewsIndicators" data-slide-to="4"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class=" d-flex flex-column align-items-center">
+									<img class="img-fluid" src="./img/reviews-avatar-1.jpg" alt="reviews-avatar-1">
+									<p class="text-block">
+										“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+										aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+										occaecat cupidatat non proident”
+									</p>
+									<p class="sigh">
+										Имя Фамилия
+									</p>
+								</div>
+							</div>
+
+
+							<div class="carousel-item">
+								<div class=" d-flex flex-column align-items-center">
+									<img class="img-fluid" src="./img/reviews-avatar-1.jpg" alt="reviews-avatar-1">
+									<p class="text-block">
+										“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+										aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+										occaecat cupidatat non proident”
+									</p>
+									<p class="sigh">
+										Имя Фамилия
+									</p>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class=" d-flex flex-column align-items-center">
+									<img class="img-fluid" src="./img/reviews-avatar-1.jpg" alt="reviews-avatar-1">
+									<p class="text-block">
+										“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+										aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+										occaecat cupidatat non proident”
+									</p>
+									<p class="sigh">
+										Имя Фамилия
+									</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class=" d-flex flex-column align-items-center">
+									<img class="img-fluid" src="./img/reviews-avatar-1.jpg" alt="reviews-avatar-1">
+									<p class="text-block">
+										“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+										aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+										occaecat cupidatat non proident”
+									</p>
+									<p class="sigh">
+										Имя Фамилия
+									</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class=" d-flex flex-column align-items-center">
+									<img class="img-fluid" src="./img/reviews-avatar-1.jpg" alt="reviews-avatar-1">
+									<p class="text-block">
+										“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+										Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+										aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+										occaecat cupidatat non proident”
+									</p>
+									<p class="sigh">
+										Имя Фамилия
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
-	<section class="feedback ">
-		<div class="feedback__caption ">
-			<p>Остались вопросы?</p>
-			<p>Вы хотите получить консультацию специалиста? Или готовы оформить заказ?
-			</p>
+	<section class="example-video">
+		<div class="container">
+			<div class="row">
+				<h2 class="caption">
+					<p>Посмотрите на шатры &laquo;в деле&raquo;, </p>
+					<p>чтобы убедиться в качестве наших работ</p>
+				</h2>
+			</div>
+			<div class="row flex-wrap">
+				<div class="col-sm-4 gallery-items gallery-item-1 pl-0">
+					<img class="img-fluid" src="./img/example-video-item-1.jpg">
+					<h3>Заголовок видео</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+				</div>
+				<div class="col-sm-4 gallery-items  gallery-item-2 ">
+					<img class="img-fluid" src="./img/example-video-item-2.jpg">
+					<h3>Заголовок видео</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+				</div>
+				<div class="col-sm-4 gallery-items  gallery-item-3 pr-0">
+					<img class="img-fluid" src="./img/example-video-item-3.jpg">
+					<h3>Заголовок видео</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+				</div>
+
+			</div>
 		</div>
-		<p>Оставьте заявку прямо сейчас – мы свяжемся с Вами в течение 1 часа. </p>
-		<button>Оставить заявку </button>
 	</section>
+	<section class="feedback">
+		<div class="container">
+			<div class="row flex-column  align-items-center">
+				<h2 class="caption text-center">
+					<p>Остались вопросы?</p>
+					<p>Вы хотите получить консультацию специалиста?
+						<br>Или готовы оформить заказ?
+					</p>
+				</h2>
+				<p class="text-block">Оставьте заявку прямо сейчас – мы свяжемся с Вами в течение 1 часа. </p>
+				<button class="btn">Оставить заявку</butto>
+	</section>
+	</div>
+	</div>
 	<footer>
-		<div class="logo ">
-			<img src="img/logo.svg ">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-3 ">
+					<img class="img-fluid d-block" src="img/icons/logo.svg">
+					<p class="privacy-policy">Политика конфиденциальности</p>
+				</div>
+
+				<address class="copyright col d-flex justify-content-center  align-items-center">
+					Разработка сайта и продвижение в интернете
+					<img class="img-fluid" src="img/logo-zenga.png">
+				</address>
+
+				<div class="col-md-3 row flex-column align-items-end justify-content-between">
+					<a href="tel:+78007754578" class="phone">8 (800) 775-45-78</a>
+					<div class="request">Заказать обратный звонок</div>
+					<div>
+						<div class="footnote">*Мы свяжемся с Вами</div>
+						<div class="footnote text-right">в течение 1 часа</div>
+					</div>
+
+				</div>
+			</div>
 		</div>
-		<address class="copyright ">
-			Разработка сайта и продвижение в интернете
-		</address>
-		<div class="back-call ">
-			8 (800) 775-45-78 Заказать обратный звонок *Мы свяжемся с Вами в течение 1 часа
-		</div>
+
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js " crossorigin="anonymous "></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
@@ -545,6 +714,14 @@
 			interval: false
 		})
 		$('.carousel-standing').carousel({
+			interval: false
+		})
+
+		$('.carousel-example-photo').carousel({
+			interval: false
+		})
+
+		$('.carousel-reviews').carousel({
 			interval: false
 		})
 	</script>

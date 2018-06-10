@@ -1,0 +1,34 @@
+.feedback {
+	padding: 80px 0;
+	background-image: url('../../img/feedback-back.jpg');
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	background-size: cover;
+	.caption {
+		margin-bottom: 90px;
+		p {
+			color: $white;
+			text-transform: uppercase;
+			&:first-of-type {
+				font-size: 48px;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+			&:last-of-type {
+				font-size: 24px;
+				font-weight: 400;
+			}
+		}
+	}
+	.text-block {
+		color: $yellow-lighter;
+		font-size: 18px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 70px;
+	}
+	button {
+		width: 30%;
+		@include btn-yellow;
+	}
+}

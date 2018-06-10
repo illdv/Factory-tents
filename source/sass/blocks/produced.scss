@@ -71,7 +71,11 @@
 		}
 	}
 	.carousel {
-		@include carousel-indicators;
+		.carousel-indicators {
+			margin-bottom: 0;
+			bottom: 0;
+			@include carousel-indicators;
+		}
 		.carousel-inner {
 			height: 370px;
 		}

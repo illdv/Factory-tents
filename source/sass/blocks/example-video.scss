@@ -1,0 +1,37 @@
+.example-video {
+	padding: 50px 0;
+	background-image: url('../../img/example-video-back.png');
+	background-repeat: no-repeat;
+	background-size: 100 auto;
+	background-position: center;
+	.caption {
+		margin-bottom: 50px;
+		p {
+			text-transform: uppercase;
+			&:first-of-type {
+				font-size: 36px;
+				font-weight: bold;
+			}
+			&:last-of-type {
+				font-size: 20px;
+				font-weight: 500;
+				margin-bottom: 0;
+			}
+		}
+	}
+	.gallery-items {
+		color: #202e45;
+		font-family: "Open Sans";
+		h3 {
+			font-size: 16px;
+			font-weight: 700;
+			margin-top: 15px;
+			p {
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 24px;
+				margin-bottom: 0
+			}
+		}
+	}
+}
