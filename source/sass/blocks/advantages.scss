@@ -6,10 +6,11 @@
 	background-repeat: no-repeat;
 	.caption {
 		text-transform: uppercase;
-		margin-left: auto;
+		margin-left: 30px;
 		h2 {
 			font-size: 30px;
 			font-weight: bold;
+			display: inline-block;
 		}
 		p {
 			color: $yellow-darker;

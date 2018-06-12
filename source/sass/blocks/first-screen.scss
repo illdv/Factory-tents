@@ -1,28 +1,51 @@
 .first-screen {
 	background-image: url('../../img/first-back.jpg');
-	background-position: 50% 0%;
 	background-repeat: no-repeat;
 	position: relative;
-	height: 84vh;
+	background-size: cover;
 	z-index: 0;
-	.container {}
+	.container {
+		padding-top: 15px;
+		height: 84.4vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		width: 63vw;
+		height: 100vh;
+		background-image: url('../../img/frame-yellow.svg');
+		background-repeat: no-repeat;
+		background-position: 70% 100%;
+		background-size: auto 100%;
+		z-index: -1;
+	}
+	&::after {
+		content: '';
+		background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: -2;
+	}
 	header {
-		padding: 15px 0;
 		.experience {
 			color: $white;
 			font-weight: bold;
 			font-size: 16px;
-			flex-grow: 2;
 			span {
 				color: $yellow-lighter;
-				text-transform: uppercase
+				text-transform: uppercase;
 			}
 		}
-		@include callback
+		@include callback;
 	}
 	.caption {
 		text-transform: uppercase;
-		margin-bottom: 40px;
 		h1 {
 			text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.25);
 			color: $white;
@@ -38,11 +61,15 @@
 			color: $yellow-lighter;
 			font-size: 18px;
 			font-weight: 500;
-			margin-bottom: 0;
 		}
 	}
+	.background {
+		background-image: url('../../img/yellow-romb.png');
+		background-repeat: no-repeat;
+		background-position: 82% 100%;
+	}
 	.triggers {
-		margin-bottom: 0;
+		margin-bottom: 50px;
 		li {
 			text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.25);
 			color: $white;
@@ -77,7 +104,7 @@
 		}
 	}
 	.rhomb {
-		margin-left: 10%;
+		transform: translateX(15%);
 		span {
 			font-size: 36px;
 			font-weight: 700;
@@ -95,7 +122,94 @@
 		}
 		button {
 			width: 305px;
-			@include btn-bw
+			margin-bottom: 40px;
+			@include btn-bw;
+		}
+	}
+	@media (max-width: 1200px) {
+		&::before {
+			background-position: 100% 100%;
+		}
+		.background {
+			background-position: 100% 100%;
+		}
+		.rhomb {
+			transform: translateX(18%);
+		}
+	}
+	@media (max-width: 992px) {
+		&::before {
+			background-image: none;
+		}
+		&::after {
+			width: 100%;
+		}
+		.background {
+			background-position: 50% 100%;
+		}
+		.rhomb {
+			transform: none;
+		}
+	}
+	@media (max-width: 768px) {
+		.background {
+			background-size: contain;
+		}
+		.caption {
+			h1 {
+				font-size: 52px;
+			}
+		}
+		.rhomb {
+			span {
+				font-size: 26px;
+			}
+			button {
+				margin-bottom: 30px;
+			}
+		}
+	}
+	@media (max-width: 576px) {
+		height: auto;
+		.container {
+			height: auto;
+		}
+		.caption {
+			h1 {
+				font-size: 37px;
+			}
+			h2 {
+				font-size: 20px;
+			}
+			p {
+				font-size: 16px;
+				font-weight: 500;
+			}
+		}
+		.background {
+			background-image: url('../../img/yellow-romb.png');
+			background-size: 100% 75%;
+		}
+		.rhomb {
+			text-align: center;
+			span {
+				font-size: 18px;
+			}
+			p:first-of-type {
+				font-size: 14px;
+				width: 65%;
+			}
+			.footnote {
+				font-size: 14px;
+				opacity: 0.9;
+				width: 90%;
+			}
+			button {
+				width: 84%;
+				margin-bottom: 0px;
+				@include btn-bw;
+				font-size: 12px;
+			}
 		}
 	}
 }
