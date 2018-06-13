@@ -347,12 +347,14 @@ body {
 .advantages {
   padding: 50px 0;
   background-image: url("../../img/advantages-background.jpg");
-  background-position: center;
+  background-position: 50% 50%;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-color: #f6f6f6; }
   .advantages .caption {
     text-transform: uppercase;
-    margin-left: 30px; }
+    margin-left: 30px;
+    margin-bottom: 40px; }
     .advantages .caption h2 {
       font-size: 30px;
       font-weight: bold;
@@ -374,7 +376,11 @@ body {
       bottom: 0;
       text-align: center;
       width: 100%; }
+    .advantages .image-block img {
+      -o-object-fit: cover;
+         object-fit: cover; }
   .advantages .text-block {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22), 0 1px 2px rgba(0, 0, 0, 0.34);
     width: 260px;
     height: 260px;
     font-size: 16px;
@@ -432,6 +438,24 @@ body {
       left: 82px;
       background-repeat: no-repeat;
       position: absolute; }
+  @media (max-width: 1200px) {
+    .advantages {
+      background-position: 40% 50%;
+      background-size: cover; }
+      .advantages .caption {
+        margin-bottom: 0px; } }
+  @media (max-width: 992px) {
+    .advantages {
+      background-image: none; }
+      .advantages .caption {
+        margin-left: 0;
+        text-align: center; } }
+  @media (max-width: 768px) {
+    .advantages .full-equip::after {
+      top: auto;
+      bottom: -30px;
+      border-bottom: none;
+      border-top: 20px solid #fbd34b; } }
 
 .problems {
   padding: 50px 0;
@@ -442,9 +466,8 @@ body {
   .problems .caption {
     font-weight: bold;
     text-transform: uppercase;
-    text-align: center;
     margin-bottom: 100px; }
-    .problems .caption h2 {
+    .problems .caption p:first-of-type {
       display: inline-block;
       font-size: 22px;
       padding: 20px;
@@ -457,56 +480,48 @@ body {
       padding-left: 50px;
       padding-right: 15px;
       margin-bottom: 0; }
-    .problems .caption p {
+    .problems .caption p:last-of-type {
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.85);
       color: #ffffff;
       font-size: 36px;
       margin-bottom: 0; }
   .problems ul {
-    list-style: none;
     font-size: 18px;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-bottom: 0; }
     .problems ul li {
       position: relative; }
-  .problems .trouble li {
-    line-height: 23.83px;
-    background-color: #e5e0dc;
-    margin-bottom: 65px;
-    min-height: 68px;
-    padding-left: 50px;
-    margin-left: 87px;
+  .problems .trouble {
     display: flex;
-    align-items: center;
-    z-index: 1;
-    margin-right: 12.5%; }
-    .problems .trouble li:first-child {
-      -webkit-transform: translate(20%);
-              transform: translate(20%); }
-    .problems .trouble li:nth-child(2) {
-      -webkit-transform: translate(10%);
-              transform: translate(10%); }
-      .problems .trouble li:nth-child(2)::before {
-        height: 69.5px; }
-    .problems .trouble li:last-child {
-      margin-bottom: 0; }
-    .problems .trouble li::after {
-      content: '';
-      position: absolute;
-      width: 87px;
-      height: 87px;
-      background-image: url("../../img/3problem-no.png");
-      left: -50px;
-      top: -9px; }
-    .problems .trouble li::before {
-      content: '';
-      position: absolute;
-      width: 50px;
-      right: -12px;
-      height: 68px;
-      -webkit-transform: skew(-16deg);
-              transform: skew(-16deg);
-      background: #e5e0dc;
-      z-index: -1; }
+    flex-direction: column; }
+    .problems .trouble li {
+      width: 70%;
+      line-height: 23.83px;
+      background-color: #e5e0dc;
+      margin-bottom: 65px;
+      min-height: 68px;
+      padding-left: 50px;
+      display: flex;
+      align-items: center;
+      z-index: 1; }
+      .problems .trouble li::after {
+        content: '';
+        position: absolute;
+        width: 87px;
+        height: 87px;
+        background-image: url("../../img/3problem-no.png");
+        left: -50px;
+        top: -9px; }
+      .problems .trouble li::before {
+        content: '';
+        position: absolute;
+        width: 50px;
+        right: -12px;
+        height: 68px;
+        -webkit-transform: skew(-16deg);
+                transform: skew(-16deg);
+        background: #e5e0dc;
+        z-index: -1; }
   .problems .solution li {
     color: #ffffff;
     line-height: 23.77px;
@@ -526,6 +541,9 @@ body {
       background-image: url("../../img/3-problem-yes.png");
       left: 0;
       top: 0; }
+  @media (max-width: 576px) {
+    .problems .caption p:first-of-type {
+      background-size: 100% 100%; } }
 
 .numerals {
   font-weight: bold;

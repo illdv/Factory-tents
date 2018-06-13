@@ -1,12 +1,14 @@
 .advantages {
 	padding: 50px 0;
 	background-image: url('../../img/advantages-background.jpg');
-	background-position: center;
+	background-position: 50% 50%;
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-color: #f6f6f6;
 	.caption {
 		text-transform: uppercase;
 		margin-left: 30px;
+		margin-bottom: 40px;
 		h2 {
 			font-size: 30px;
 			font-weight: bold;
@@ -32,8 +34,12 @@
 			text-align: center;
 			width: 100%;
 		}
+		img {
+			object-fit: cover;
+		}
 	}
 	.text-block {
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22), 0 1px 2px rgba(0, 0, 0, 0.34);
 		width: 260px;
 		height: 260px;
 		font-size: 16px;
@@ -100,6 +106,30 @@
 				left: 82px;
 				background-repeat: no-repeat;
 				position: absolute;
+			}
+		}
+	}
+	@media (max-width: 1200px) {
+		background-position: 40% 50%;
+		background-size: cover;
+		.caption {
+			margin-bottom: 0px;
+		}
+	}
+	@media (max-width: 992px) {
+		background-image: none;
+		.caption {
+			margin-left: 0;
+			text-align: center;
+		}
+	}
+	@media (max-width: 768px) {
+		.full-equip {
+			&::after {
+				top: auto;
+				bottom: -30px;
+				border-bottom: none;
+				border-top: 20px solid #fbd34b;
 			}
 		}
 	}

@@ -7,9 +7,8 @@
 	.caption {
 		font-weight: bold;
 		text-transform: uppercase;
-		text-align: center;
 		margin-bottom: 100px;
-		h2 {
+		p:first-of-type {
 			display: inline-block;
 			font-size: 22px;
 			padding: 20px;
@@ -23,7 +22,7 @@
 			padding-right: 15px;
 			margin-bottom: 0;
 		}
-		p {
+		p:last-of-type {
 			text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.85);
 			color: $white;
 			font-size: 36px;
@@ -31,37 +30,28 @@
 		}
 	}
 	ul {
-		list-style: none;
 		font-size: 18px;
 		font-weight: 700;
+		margin-bottom: 0;
 		li {
 			position: relative;
 		}
 	}
 	.trouble {
+		display: flex;
+		flex-direction: column;
 		li {
+			width: 70%;
 			line-height: 23.83px;
 			background-color: #e5e0dc;
 			margin-bottom: 65px;
 			min-height: 68px;
 			padding-left: 50px;
-			margin-left: 87px;
 			display: flex;
 			align-items: center;
 			z-index: 1;
-			margin-right: 12.5%;
-			&:first-child {
-				transform: translate(20%);
-			}
-			&:nth-child(2) {
-				transform: translate(10%);
-				&::before {
-					height: 69.5px;
-				}
-			}
-			&:last-child {
-				margin-bottom: 0;
-			}
+			&:first-child {}
+			&:last-child {}
 			&::after {
 				content: '';
 				position: absolute;
@@ -106,6 +96,16 @@
 				background-image: url('../../img/3-problem-yes.png');
 				left: 0;
 				top: 0;
+			}
+		}
+	}
+	@media (max-width: 1200px) {}
+	@media (max-width: 992px) {}
+	@media (max-width: 768px) {}
+	@media (max-width: 576px) {
+		.caption {
+			p:first-of-type {
+				background-size: 100% 100%;
 			}
 		}
 	}
