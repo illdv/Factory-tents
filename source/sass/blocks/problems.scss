@@ -4,6 +4,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	background-color: #f6f6f6;
 	.caption {
 		font-weight: bold;
 		text-transform: uppercase;
@@ -29,83 +30,205 @@
 			margin-bottom: 0;
 		}
 	}
-	ul {
+	.line-1 p:first-child {
+		margin-left: 8.7%;
+	}
+	.line-2 p:first-child {
+		margin-left: 2.3%;
+	}
+	.line-1 p:last-child {
+		margin-right: -11.5%;
+	}
+	.line-2 p:last-child {
+		margin-right: -4%;
+	}
+	.line-3 p:first-child {
+		margin-left: -2%;
+	}
+	.line-1,
+	.line-2,
+	.line-3 {
 		font-size: 18px;
 		font-weight: 700;
 		margin-bottom: 0;
-		li {
-			position: relative;
-		}
-	}
-	.trouble {
 		display: flex;
-		flex-direction: column;
-		li {
-			width: 70%;
-			line-height: 23.83px;
-			background-color: #e5e0dc;
-			margin-bottom: 65px;
-			min-height: 68px;
-			padding-left: 50px;
-			display: flex;
+		justify-content: space-between;
+		p {
+			position: relative;
+			width: 35%;
+			margin-bottom: 0;
+			&:first-of-type {
+				line-height: 23.83px;
+				background-color: #e5e0dc;
+				height: 70px;
+				padding-left: 50px;
+				display: flex;
+				align-items: center;
+				z-index: 1;
+				transform: translateX(27%);
+				&::after {
+					content: '';
+					position: absolute;
+					width: 87px;
+					height: 87px;
+					background-image: url('../../img/3problem-no.png');
+					left: -50px;
+					top: -9px;
+				}
+				&::before {
+					content: '';
+					position: absolute;
+					width: 50px;
+					right: -12px;
+					height: 70px;
+					transform: skew(-16deg);
+					background: #e5e0dc;
+					z-index: -1;
+				}
+			}
+			&:last-of-type {
+				text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+				color: $white;
+				line-height: 23.77px;
+				padding-left: 55px;
+				margin-bottom: 75px;
+				transform: translateX(-175px);
+				&::after {
+					content: '';
+					position: absolute;
+					width: 35px;
+					height: 35px;
+					background-image: url('../../img/3-problem-yes.png');
+					left: 0;
+					top: 0;
+				}
+			}
+		}
+	}
+	@media (max-width: 1200px) {
+		.line-1 p:first-child {
+			margin-left: 7%;
+		}
+		.line-2 p:first-child {
+			margin-left: 2%;
+		}
+		.line-3 p:first-child {
+			margin-left: -4%;
+		}
+		.line-1 p:last-child {
+			margin-right: -14.5%;
+		}
+		.line-2 p:last-child {
+			margin-right: -9%;
+		}
+		.line-3 p:last-child {
+			margin-right: -3.5%;
+		}
+	}
+	@media (max-width: 992px) {
+		.line-1,
+		.line-2,
+		.line-3 {
+			font-size: 14px;
+		}
+		.line-1 p:first-child {
+			margin-left: 8%;
+		}
+		.line-2 p:first-child {
+			margin-left: 1%;
+		}
+		.line-3 p:first-child {
+			margin-left: -6.9%;
+		}
+		.line-1 p:last-child {
+			margin-right: -20%;
+		}
+		.line-2 p:last-child {
+			margin-right: -15%;
+		}
+		.line-3 p:last-child {
+			margin-right: -10%;
+		}
+	}
+	@media (max-width: 768px) {
+		.line-1 p:first-child {
+			margin-left: 10%;
+		}
+		.line-2 p:first-child {
+			margin-left: 0%;
+		}
+		.line-3 p:first-child {
+			margin-left: -15%;
+		}
+		.line-1 p:last-child {
+			margin-right: -20%;
+		}
+		.line-2 p:last-child {
+			margin-right: -10%;
+		}
+		.line-3 p:last-child {
+			margin-right: 0%;
+		}
+		background-size: 100% 100%;
+		.line-1,
+		.line-2,
+		.line-3 {
+			font-size: 16px;
+			flex-direction: column;
 			align-items: center;
-			z-index: 1;
-			&:first-child {}
-			&:last-child {}
-			&::after {
-				content: '';
-				position: absolute;
-				width: 87px;
-				height: 87px;
-				background-image: url('../../img/3problem-no.png');
-				left: -50px;
-				top: -9px;
-			}
-			&::before {
-				content: '';
-				position: absolute;
-				width: 50px;
-				right: -12px;
-				height: 68px;
-				transform: skew(-16deg);
-				background: #e5e0dc;
-				z-index: -1;
+			justify-content: center;
+			p {
+				&:first-of-type {
+					margin-bottom: 10px;
+					transform: translate(25%);
+					width: 100%;
+					padding-right: 118px;
+					&::before {
+						display: none;
+					}
+				}
+				&:last-of-type {
+					transform: translate(0%);
+					width: 60%;
+				}
 			}
 		}
 	}
-	.solution {
-		li {
-			color: $white;
-			line-height: 23.77px;
-			padding-left: 55px;
-			margin-bottom: 75px;
-			&:first-child {
-				margin-left: 20%
-			}
-			&:nth-child(2) {
-				margin-left: 10%
-			}
-			&:last-child {
-				margin-bottom: 0
-			}
-			&::after {
-				content: '';
-				position: absolute;
-				width: 35px;
-				height: 35px;
-				background-image: url('../../img/3-problem-yes.png');
-				left: 0;
-				top: 0;
-			}
-		}
-	}
-	@media (max-width: 1200px) {}
-	@media (max-width: 992px) {}
-	@media (max-width: 768px) {}
 	@media (max-width: 576px) {
+		background-image: none;
 		.caption {
 			p:first-of-type {
 				background-size: 100% 100%;
+			}
+		}
+		.line-1,
+		.line-2,
+		.line-3 {
+			p {
+				width: auto;
+				font-size: 14px;
+				&:first-of-type {
+					margin-left: 90px;
+					margin-bottom: 10px;
+					transform: translate(0);
+					width: 100%;
+					padding-right: 45px;
+					background-color: $white;
+					box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22), 0 1px 2px rgba(0, 0, 0, 0.34);
+					&::before {
+						display: none;
+					}
+				}
+				&:last-of-type {
+					transform: translate(0%);
+					font-size: 18px;
+					width: 50%;
+					margin-right: 0;
+					padding: 0;
+					&::after {
+						left: -40px;
+					}
+				}
 			}
 		}
 	}

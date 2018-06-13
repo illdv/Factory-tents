@@ -25,9 +25,7 @@
 	}
 	ul {
 		font-family: "Open Sans";
-		padding-left: 0;
 		margin-bottom: 0;
-		list-style-type: none;
 		margin-bottom: 65px;
 		li {
 			display: flex;
@@ -86,4 +84,8 @@
 		background-color: #ffc500;
 		@include btn-yellow;
 	}
+	@media (max-width: 1200px) {}
+	@media (max-width: 992px) {}
+	@media (max-width: 768px) {}
+	@media (max-width: 576px) {}
 }

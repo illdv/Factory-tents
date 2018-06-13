@@ -462,7 +462,8 @@ body {
   background-image: url("../../img/3problem-back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  background-color: #f6f6f6; }
   .problems .caption {
     font-weight: bold;
     text-transform: uppercase;
@@ -485,65 +486,192 @@ body {
       color: #ffffff;
       font-size: 36px;
       margin-bottom: 0; }
-  .problems ul {
+  .problems .line-1 p:first-child {
+    margin-left: 8.7%; }
+  .problems .line-2 p:first-child {
+    margin-left: 2.3%; }
+  .problems .line-1 p:last-child {
+    margin-right: -11.5%; }
+  .problems .line-2 p:last-child {
+    margin-right: -4%; }
+  .problems .line-3 p:first-child {
+    margin-left: -2%; }
+  .problems .line-1,
+  .problems .line-2,
+  .problems .line-3 {
     font-size: 18px;
     font-weight: 700;
-    margin-bottom: 0; }
-    .problems ul li {
-      position: relative; }
-  .problems .trouble {
+    margin-bottom: 0;
     display: flex;
-    flex-direction: column; }
-    .problems .trouble li {
-      width: 70%;
-      line-height: 23.83px;
-      background-color: #e5e0dc;
-      margin-bottom: 65px;
-      min-height: 68px;
-      padding-left: 50px;
-      display: flex;
-      align-items: center;
-      z-index: 1; }
-      .problems .trouble li::after {
-        content: '';
-        position: absolute;
-        width: 87px;
-        height: 87px;
-        background-image: url("../../img/3problem-no.png");
-        left: -50px;
-        top: -9px; }
-      .problems .trouble li::before {
-        content: '';
-        position: absolute;
-        width: 50px;
-        right: -12px;
-        height: 68px;
-        -webkit-transform: skew(-16deg);
-                transform: skew(-16deg);
-        background: #e5e0dc;
-        z-index: -1; }
-  .problems .solution li {
-    color: #ffffff;
-    line-height: 23.77px;
-    padding-left: 55px;
-    margin-bottom: 75px; }
-    .problems .solution li:first-child {
-      margin-left: 20%; }
-    .problems .solution li:nth-child(2) {
-      margin-left: 10%; }
-    .problems .solution li:last-child {
+    justify-content: space-between; }
+    .problems .line-1 p,
+    .problems .line-2 p,
+    .problems .line-3 p {
+      position: relative;
+      width: 35%;
       margin-bottom: 0; }
-    .problems .solution li::after {
-      content: '';
-      position: absolute;
-      width: 35px;
-      height: 35px;
-      background-image: url("../../img/3-problem-yes.png");
-      left: 0;
-      top: 0; }
+      .problems .line-1 p:first-of-type,
+      .problems .line-2 p:first-of-type,
+      .problems .line-3 p:first-of-type {
+        line-height: 23.83px;
+        background-color: #e5e0dc;
+        height: 70px;
+        padding-left: 50px;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+        -webkit-transform: translateX(27%);
+                transform: translateX(27%); }
+        .problems .line-1 p:first-of-type::after,
+        .problems .line-2 p:first-of-type::after,
+        .problems .line-3 p:first-of-type::after {
+          content: '';
+          position: absolute;
+          width: 87px;
+          height: 87px;
+          background-image: url("../../img/3problem-no.png");
+          left: -50px;
+          top: -9px; }
+        .problems .line-1 p:first-of-type::before,
+        .problems .line-2 p:first-of-type::before,
+        .problems .line-3 p:first-of-type::before {
+          content: '';
+          position: absolute;
+          width: 50px;
+          right: -12px;
+          height: 70px;
+          -webkit-transform: skew(-16deg);
+                  transform: skew(-16deg);
+          background: #e5e0dc;
+          z-index: -1; }
+      .problems .line-1 p:last-of-type,
+      .problems .line-2 p:last-of-type,
+      .problems .line-3 p:last-of-type {
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+        color: #ffffff;
+        line-height: 23.77px;
+        padding-left: 55px;
+        margin-bottom: 75px;
+        -webkit-transform: translateX(-175px);
+                transform: translateX(-175px); }
+        .problems .line-1 p:last-of-type::after,
+        .problems .line-2 p:last-of-type::after,
+        .problems .line-3 p:last-of-type::after {
+          content: '';
+          position: absolute;
+          width: 35px;
+          height: 35px;
+          background-image: url("../../img/3-problem-yes.png");
+          left: 0;
+          top: 0; }
+  @media (max-width: 1200px) {
+    .problems .line-1 p:first-child {
+      margin-left: 7%; }
+    .problems .line-2 p:first-child {
+      margin-left: 2%; }
+    .problems .line-3 p:first-child {
+      margin-left: -4%; }
+    .problems .line-1 p:last-child {
+      margin-right: -14.5%; }
+    .problems .line-2 p:last-child {
+      margin-right: -9%; }
+    .problems .line-3 p:last-child {
+      margin-right: -3.5%; } }
+  @media (max-width: 992px) {
+    .problems .line-1,
+    .problems .line-2,
+    .problems .line-3 {
+      font-size: 14px; }
+    .problems .line-1 p:first-child {
+      margin-left: 8%; }
+    .problems .line-2 p:first-child {
+      margin-left: 1%; }
+    .problems .line-3 p:first-child {
+      margin-left: -6.9%; }
+    .problems .line-1 p:last-child {
+      margin-right: -20%; }
+    .problems .line-2 p:last-child {
+      margin-right: -15%; }
+    .problems .line-3 p:last-child {
+      margin-right: -10%; } }
+  @media (max-width: 768px) {
+    .problems {
+      background-size: 100% 100%; }
+      .problems .line-1 p:first-child {
+        margin-left: 10%; }
+      .problems .line-2 p:first-child {
+        margin-left: 0%; }
+      .problems .line-3 p:first-child {
+        margin-left: -15%; }
+      .problems .line-1 p:last-child {
+        margin-right: -20%; }
+      .problems .line-2 p:last-child {
+        margin-right: -10%; }
+      .problems .line-3 p:last-child {
+        margin-right: 0%; }
+      .problems .line-1,
+      .problems .line-2,
+      .problems .line-3 {
+        font-size: 16px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        .problems .line-1 p:first-of-type,
+        .problems .line-2 p:first-of-type,
+        .problems .line-3 p:first-of-type {
+          margin-bottom: 10px;
+          -webkit-transform: translate(25%);
+                  transform: translate(25%);
+          width: 100%;
+          padding-right: 118px; }
+          .problems .line-1 p:first-of-type::before,
+          .problems .line-2 p:first-of-type::before,
+          .problems .line-3 p:first-of-type::before {
+            display: none; }
+        .problems .line-1 p:last-of-type,
+        .problems .line-2 p:last-of-type,
+        .problems .line-3 p:last-of-type {
+          -webkit-transform: translate(0%);
+                  transform: translate(0%);
+          width: 60%; } }
   @media (max-width: 576px) {
-    .problems .caption p:first-of-type {
-      background-size: 100% 100%; } }
+    .problems {
+      background-image: none; }
+      .problems .caption p:first-of-type {
+        background-size: 100% 100%; }
+      .problems .line-1 p,
+      .problems .line-2 p,
+      .problems .line-3 p {
+        width: auto;
+        font-size: 14px; }
+        .problems .line-1 p:first-of-type,
+        .problems .line-2 p:first-of-type,
+        .problems .line-3 p:first-of-type {
+          margin-left: 90px;
+          margin-bottom: 10px;
+          -webkit-transform: translate(0);
+                  transform: translate(0);
+          width: 100%;
+          padding-right: 45px;
+          background-color: #ffffff;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22), 0 1px 2px rgba(0, 0, 0, 0.34); }
+          .problems .line-1 p:first-of-type::before,
+          .problems .line-2 p:first-of-type::before,
+          .problems .line-3 p:first-of-type::before {
+            display: none; }
+        .problems .line-1 p:last-of-type,
+        .problems .line-2 p:last-of-type,
+        .problems .line-3 p:last-of-type {
+          -webkit-transform: translate(0%);
+                  transform: translate(0%);
+          font-size: 18px;
+          width: 50%;
+          margin-right: 0;
+          padding: 0; }
+          .problems .line-1 p:last-of-type::after,
+          .problems .line-2 p:last-of-type::after,
+          .problems .line-3 p:last-of-type::after {
+            left: -40px; } }
 
 .numerals {
   font-weight: bold;
@@ -568,9 +696,7 @@ body {
       font-size: 36px; }
   .numerals ul {
     font-family: "Open Sans";
-    padding-left: 0;
     margin-bottom: 0;
-    list-style-type: none;
     margin-bottom: 65px; }
     .numerals ul li {
       display: flex;
