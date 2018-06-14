@@ -126,19 +126,22 @@
 		}
 	}
 	@media (max-width: 992px) {
+		.caption {
+			margin-bottom: 70px;
+		}
 		.line-1,
 		.line-2,
 		.line-3 {
 			font-size: 14px;
 		}
 		.line-1 p:first-child {
-			margin-left: 8%;
+			margin-left: 8.5%;
 		}
 		.line-2 p:first-child {
-			margin-left: 1%;
+			margin-left: 1.5%;
 		}
 		.line-3 p:first-child {
-			margin-left: -6.9%;
+			margin-left: -6%;
 		}
 		.line-1 p:last-child {
 			margin-right: -20%;

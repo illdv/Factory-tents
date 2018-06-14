@@ -6,6 +6,7 @@
 	padding: 50px 0;
 	.caption {
 		text-transform: uppercase;
+		margin-bottom: 100px;
 		P {
 			margin-bottom: 0.5rem;
 		}
@@ -22,7 +23,7 @@
 		p:last-of-type {
 			font-size: 24px;
 			font-weight: 400;
-			margin-bottom: 25px;
+			margin-bottom: 0;
 		}
 	}
 	ul {
@@ -80,6 +81,9 @@
 	}
 	@media (max-width: 992px) {
 		background-image: none;
+		.caption {
+			margin-bottom: 70px;
+		}
 	}
 	@media (max-width: 768px) {
 		ul {

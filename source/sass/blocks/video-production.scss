@@ -23,8 +23,8 @@
 			}
 		}
 	}
-	.player {
-		transform: translateX(-230px);
+	.player-2 {
+		transform: translateX(-160px);
 		position: relative;
 		font-size: 0;
 		border: 50px solid $yellow-lighter;
@@ -55,13 +55,13 @@
 		transition: all .3s;
 		background: rgba(0, 0, 0, 0.1);
 	}
-	.player:hover .player__controls {
+	.player-2:hover .player__controls {
 		transform: translateY(0);
 	}
-	.player:hover .progress {
+	.player-2:hover .progress-2 {
 		height: 15px;
 	}
-	.progress {
+	.progress-2 {
 		position: relative;
 		display: flex;
 		flex-basis: 100%;
@@ -70,10 +70,33 @@
 		background: rgba(0, 0, 0, 0.5);
 		cursor: ew-resize;
 	}
-	.progress__filled {
+	.progress__filled-2 {
 		width: 50%;
 		background: $black;
 		flex: 0;
 		flex-basis: 50%;
 	}
+	@media (max-width: 1200px) {
+		.player-2 {
+			transform: translateX(-100px);
+		}
+	}
+	@media (max-width: 992px) {
+		.caption {
+			padding: 0;
+			border: none;
+			text-align: center;
+			margin-bottom: 70px;
+		}
+		.player-2 {
+			transform: translateX(0);
+			margin-top: 0;
+		}
+	}
+	@media (max-width: 768px) {
+		.player-2 {
+			border-width: 25px;
+		}
+	}
+	@media (max-width: 576px) {}
 }
