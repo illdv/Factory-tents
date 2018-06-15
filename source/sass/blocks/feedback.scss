@@ -5,7 +5,7 @@
 	background-position: 50% 0%;
 	background-size: cover;
 	.caption {
-		margin-bottom: 90px;
+		margin-bottom: 100px;
 		p {
 			color: $white;
 			text-transform: uppercase;
@@ -17,6 +17,7 @@
 			&:last-of-type {
 				font-size: 24px;
 				font-weight: 400;
+				margin-bottom: 0;
 			}
 		}
 	}
@@ -25,10 +26,27 @@
 		font-size: 18px;
 		font-weight: bold;
 		text-transform: uppercase;
-		margin-bottom: 70px;
+		margin-bottom: 100px;
 	}
 	button {
-		width: 30%;
+		width: 40%;
+		white-space: normal;
 		@include btn-yellow;
+	}
+	@media (max-width: 992px) {
+		.caption {
+			margin-bottom: 70px;
+		}
+		.text-block {
+			margin-bottom: 70px;
+		}
+	}
+	@media (max-width: 768px) {
+		button {
+			width: 85%;
+		}
+	}
+	@media (max-width: 576px) {
+		padding: 50px 15px;
 	}
 }

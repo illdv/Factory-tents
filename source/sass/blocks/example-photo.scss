@@ -1,12 +1,8 @@
 .example-photo {
 	padding-top: 50px;
 	padding-bottom: 70px;
-	background-image: url('../../img/example-photo-back.png');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 83.5%;
 	.caption {
-		margin-bottom: 50px;
+		margin-bottom: 100px;
 		p {
 			margin-bottom: 0;
 			text-transform: uppercase;
@@ -26,14 +22,90 @@
 		}
 	}
 	.carousel {
+		z-index: 1;
+		&::after {
+			content: '';
+			position: absolute;
+			width: 140px;
+			height: 140px;
+			border: 20px solid $yellow-lighter;
+			bottom: -40px;
+			left: -25px;
+			z-index: -1;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			width: 220px;
+			height: 220px;
+			border: 20px solid $yellow-lighter;
+			top: -40px;
+			right: -25px;
+			z-index: -1;
+		}
 		.carousel-indicators {
 			margin-bottom: 0;
 			bottom: -20px;
 			@include carousel-indicators;
 		}
+		.image-block {
+			padding: 0 15px;
+		}
 	}
-	@media (max-width: 1200px) {}
-	@media (max-width: 992px) {}
-	@media (max-width: 768px) {}
-	@media (max-width: 576px) {}
+	@media (max-width: 1200px) {
+		.carousel {
+			&::after {
+				bottom: -30px;
+				left: -15px;
+			}
+			&::before {
+				top: -30px;
+				right: -15px;
+			}
+		}
+	}
+	@media (max-width: 992px) {
+		.caption {
+			margin-bottom: 70px;
+		}
+		.carousel {
+			&::after {
+				width: 100px;
+				height: 100px;
+				bottom: -30px;
+				left: -15px;
+			}
+			&::before {
+				width: 180px;
+				height: 180px;
+				top: -30px;
+				right: -15px;
+			}
+		}
+	}
+	@media (max-width: 768px) {
+		.caption {
+			padding: 0 15px;
+		}
+		.carousel {
+			&::after {
+				display: none;
+			}
+			&::before {
+				display: none;
+			}
+		}
+	}
+	@media (max-width: 576px) {
+		.carousel-item>div {
+			flex-direction: column;
+			align-items: center;
+		}
+		.image-block {
+			margin-bottom: 15px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
 }

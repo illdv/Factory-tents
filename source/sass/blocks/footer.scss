@@ -2,7 +2,7 @@ footer {
 	padding: 30px 0;
 	background-color: #2a2c30;
 	.privacy-policy {
-		margin-top: 15px;
+		margin-top: 10px;
 		margin-bottom: 0;
 		display: inline-block;
 		vertical-align: middle;
@@ -13,6 +13,14 @@ footer {
 		color: #9aa2b2;
 		letter-spacing: 0.32px;
 		border-bottom: 1px dotted #9aa2b2;
+		cursor: pointer;
+		&:hover {
+			border-bottom: none;
+			padding-bottom: 1px;
+		}
+		&:active {
+			border-bottom: 1px dotted #9aa2b2;
+		}
 	}
 	.copyright {
 		color: #ffffff;
@@ -22,6 +30,19 @@ footer {
 		line-height: 25.89px;
 		letter-spacing: 0.32px;
 		margin-bottom: 0;
+		p {
+			margin-bottom: 0;
+		}
+		img {
+			padding-left: 10px;
+			vertical-align: middle;
+		}
 	}
 	@include callback;
+	@media (max-width: 992px) {
+		.copyright {
+			margin-top: 15px;
+		}
+	}
+
 }
