@@ -1,13 +1,15 @@
 .standing {
 	padding: 50px 0;
-	background-color: #f4f3f3;
-	background-image: url('../../img/standing-back.jpg');
+	background-image: url('../../img/standing-romb.png'), url('../../img/standing-back.jpg');
 	background-repeat: no-repeat;
-	background-position: left;
-	background-size: 100% 100%;
+	background-position: 50% 0, left;
+	background-size: 20% 55%, 50% 100%;
+	background-color: #f4f3f3;
 	.caption {
-		margin-bottom: 130px;
-		transform: translateX(-55px);
+		margin-bottom: 100px;
+		transform: translateX(-5%);
+		background-repeat: no-repeat;
+		background-size: contain;
 		span {
 			display: block;
 			font-size: 36px;
@@ -34,6 +36,45 @@
 			margin-bottom: 0;
 			bottom: 0;
 			@include carousel-indicators;
+		}
+	}
+	@media (max-width: 1200px) {
+		background-size: 25% 50%, 50% 100%;
+	}
+	@media (max-width: 992px) {
+		background-size: 27% 51%, 50% 100%;
+		.caption {
+			margin-bottom: 70px;
+			transform: translateX(-3%);
+			span {
+				margin-bottom: 0;
+			}
+			p:first-of-type {
+				margin-bottom: 10px;
+			}
+		}
+		.carousel {
+			img {
+				width: 180px;
+				height: 263px;
+			}
+		}
+	}
+	@media (max-width: 768px) {
+		background-image: none;
+		.caption {
+			transform: translate(0);
+			text-align: center;
+		}
+	}
+	@media (max-width: 576px) {
+		.carousel-item>div {
+			flex-direction: column;
+			align-items: center;
+			img {
+				width: inherit;
+				height: inherit;
+			}
 		}
 	}
 }

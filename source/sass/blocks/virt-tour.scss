@@ -136,7 +136,8 @@
 			margin-bottom: 70px;
 		}
 		.left-side {
-			border-right: 50px solid $yellow-lighter;
+			border-right: solid $yellow-lighter;
+			border-width: 25px;
 			border-bottom: none;
 			text-align: center;
 		}

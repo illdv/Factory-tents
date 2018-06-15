@@ -3,11 +3,12 @@
   background-image: url('./../../img/principles-back.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: relative;
   &::before {
     content: '';
     position: absolute;
-    width: 70%;
+    width: 75%;
     height: 100%;
     top: 0px;
     right: -10%;
@@ -17,6 +18,7 @@
   }
   .caption {
     margin-bottom: 100px;
+    text-align: right;
     p {
       text-transform: uppercase;
       &:first-of-type {
@@ -28,49 +30,160 @@
         color: $white;
         font-size: 16px;
         font-weight: 500;
+        margin-bottom: 0;
       }
     }
   }
   ul {
-    list-style-type: none;
     margin-bottom: 0;
-    padding-left: 0;
     li {
       display: flex;
+      justify-content: flex-end;
+      height: 131px;
       p {
         &:first-of-type {
+          position: relative;
+          height: 52px;
+          background-color: $yellow-lighter;
           display: flex;
           align-items: center;
           justify-content: flex-end;
+          text-align: end;
+          background-position: center;
           font-weight: 700;
           text-transform: uppercase;
-          background-repeat: no-repeat;
-          background-size: 100% auto;
-          background-position: center;
-          margin-right: 30px;
-          flex-grow: 1;
-          padding-right: 20px;
+          z-index: 1;
+          padding-left: 15px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          &::before {
+            content: '';
+            position: absolute;
+            width: 50px;
+            right: -12px;
+            height: 52px;
+            transform: skew(-16deg);
+            background: $yellow-lighter;
+            z-index: -1;
+          }
+          &::after {
+            position: absolute;
+            text-shadow: 0 0 6px rgba(0, 0, 0, 0.73);
+            color: $yellow-lighter;
+            font-family: 'Open Sans';
+            font-size: 71px;
+            font-weight: 700;
+            height: 51px;
+            text-transform: uppercase;
+            top: 0;
+            left: -25px;
+            line-height: 51px;
+          }
         }
         &:last-of-type {
+          margin-left: 20px;
           font-size: 16px;
           font-weight: 400;
           line-height: 23.91px;
           color: $white;
-          flex-basis: 40%;
+          flex-basis: 45%;
+          margin-left: 40px;
         }
       }
     }
-    .back-1 {
-      background-image: url('./../../img/principles-1.png');
-      margin-left: -10%;
+    .left-1 {
+      flex-basis: 40%;
+      &::after {
+        content: '1';
+      }
     }
-    .back-2 {
-      background-image: url('./../../img/principles-2.png');
-      margin-left: -15%;
+    .left-2 {
+      flex-basis: 45%;
+      &::after {
+        content: '2';
+      }
     }
-    .back-3 {
-      background-image: url('./../../img/principles-3.png');
-      margin-left: -20%;
+    .left-3 {
+      flex-basis: 47%;
+      &::after {
+        content: '3';
+      }
+    }
+  }
+  @media (max-width: 1679px) {
+    &::before {
+      width: 77%;
+    }
+  }
+  @media (max-width: 1200px) {
+    &::before {
+      width: 83%;
+    }
+  }
+  @media (max-width: 992px) {
+    .caption {
+      margin-bottom: 70px;
+    }
+    &::before {
+      width: 90%;
+    }
+  }
+  @media (max-width: 768px) {
+    &::before {
+      width: 190%;
+      right: -40%;
+    }
+    .caption {
+      text-align: center;
+    }
+    ul {
+      li {
+        margin-bottom: 50px;
+        height: auto;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        p:first-of-type {
+          height: 60px;
+          &::before {
+            height: 60px;
+          }
+          &::after {
+            height: 60px;
+            line-height: 60px;
+          }
+        }
+      }
+      .left-1,
+      .left-2,
+      .left-3 {
+        flex-basis: 48%;
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    ul {
+      li {
+        flex-wrap: wrap;
+        justify-content: center;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        p {
+          margin-bottom: 0;
+        }
+        p:first-of-type {
+          flex-basis: 80%;
+        }
+        p:last-of-type {
+          flex-basis: 80%;
+        }
+      }
+      .left-1,
+      .left-2,
+      .left-3 {
+        flex-basis: 48%;
+      }
     }
   }
 }
