@@ -91,13 +91,16 @@
 			@include carousel-indicators;
 		}
 	}
-	@media (max-width: 1200px) {}
 	@media (max-width: 992px) {
 		&::before {
 			width: 55%;
 		}
 		.caption::after {
 			height: 62%;
+			width: 50px;
+		}
+		.caption::before {
+			width: 50px;
 		}
 		.carousel {
 			.carousel-item {
@@ -108,15 +111,20 @@
 		}
 	}
 	@media (max-width: 768px) {
+		background-size: 100% 70%;
+		background-position: bottom;
 		&::before {
 			width: 100%;
-			height: 70%;
+			height: 100%;
 			top: auto;
 			bottom: 0;
 		}
 		.caption {
 			text-align: center;
 			padding-top: 50px;
+			p:last-of-type {
+				color: $yellow-darker;
+			}
 			&::before {
 				display: none;
 			}

@@ -1,9 +1,17 @@
 .example-video {
 	padding: 50px 0;
-	background-image: url('../../img/example-video-back.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		top: -30%;
+		right: -25%;
+		width: 50%;
+		height: 140%;
+		transform: rotate(-215deg);
+		border: 40px solid $yellow-lighter;
+		z-index: -1;
+	}
 	.caption {
 		margin-bottom: 100px;
 		p {
@@ -40,13 +48,33 @@
 			object-fit: cover;
 		}
 	}
+	@media (max-width: 1200px) {
+		&::after {
+			top: -8%;
+			right: -28%;
+		}
+	}
 	@media (max-width: 992px) {
 		.caption {
 			margin-bottom: 70px;
 		}
+		&::after {
+			top: -8%;
+			right: -35%;
+		}
+	}
+	@media (max-width: 768px) {
+		&::after {
+			right: -45%;
+			width: 65%;
+		}
 	}
 	@media (max-width: 576px) {
-		background: none;
+		&::after {
+			left: 550px;
+			width: 500px;
+			top: -20%;
+		}
 		.gallery-items {
 			margin-bottom: 15px;
 			width: 90%;

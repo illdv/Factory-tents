@@ -60,6 +60,9 @@
 		.caption {
 			transform: translate(0);
 			text-align: center;
+			span {
+				color: $yellow-darker;
+			}
 		}
 	}
 	@media (max-width: 576px) {

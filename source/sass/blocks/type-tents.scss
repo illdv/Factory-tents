@@ -1,9 +1,28 @@
 .type-tents {
 	padding: 50px 0;
-	background-image: url('../../img/type-tents.back.png');
-	background-size: auto 100%;
-	background-position: center;
-	background-repeat: no-repeat;
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		top: -30%;
+		left: -25%;
+		width: 50%;
+		height: 140%;
+		transform: rotate(225deg);
+		border: 40px solid $yellow-lighter;
+		z-index: -1;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: -60%;
+		right: -20%;
+		width: 900px;
+		height: 900px;
+		transform: rotate(135deg);
+		border: 40px solid #ebebeb;
+		z-index: -1;
+	}
 	.caption {
 		p {
 			text-transform: uppercase;
@@ -94,13 +113,38 @@
 		}
 	}
 	@media (max-width: 1200px) {
+		&::after {
+			top: -40%;
+			left: -35%;
+		}
+		&::before {
+			bottom: -50%;
+			width: 800px;
+			height: 800px;
+		}
 		.left-side {
 			flex-direction: column;
 			justify-content: space-between;
 		}
 	}
 	@media (max-width: 992px) {
-		background: none;
+		&::after {
+			position: absolute;
+			top: -25%;
+			left: -5%;
+			width: 50%;
+			height: 560px;
+			transform: rotate(100deg);
+			border: 40px solid $yellow-lighter;
+		}
+		&::before {
+			bottom: -30%;
+			right: -5%;
+			width: 50%;
+			height: 560px;
+			transform: rotate(100deg);
+			border: 40px solid #ebebeb;
+		}
 		.left-side {
 			flex-direction: row;
 			padding-left: 15px;
@@ -111,6 +155,14 @@
 		}
 	}
 	@media (max-width: 768px) {
+		&::after {
+			left: -47%;
+			top: -10%;
+			transform: rotate(125deg);
+		}
+		&::before {
+			right: -25%;
+		}
 		.under {
 			flex-direction: column;
 			align-items: center;
@@ -129,16 +181,29 @@
 		}
 	}
 	@media (max-width: 576px) {
+		&::after {
+			left: -60%;
+			top: 5%;
+			width: 350px;
+			transform: rotate(210deg)
+		}
+		&::before {
+			right: -40%;
+			bottom: -20%;
+			width: 350px;
+			transform: rotate(115deg)
+		}
 		.caption {
+			padding-left: 15px;
+			padding-right: 15px;
 			flex-basis: auto;
+			text-align: center;
 			margin-bottom: 70px;
 		}
 		.left-side,
 		.right-side {
 			flex-direction: column;
 			align-items: center;
-			padding-left: 15px;
-			padding-right: 15px;
 			& .item:first-child {
 				margin-bottom: 30px;
 			}

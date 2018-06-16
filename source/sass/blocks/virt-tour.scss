@@ -154,9 +154,20 @@
 	@media (max-width: 576px) {
 		.left-side {
 			border: none;
+			ul {
+				padding: 0;
+			}
 		}
 		.caption {
+			display: block;
 			padding-top: 50px;
+			text-align: center;
+			padding-left: 0;
+			padding-right: 0;
 		}
+	}
+	.player-1,
+	.player__video {
+		min-height: 250px;
 	}
 }

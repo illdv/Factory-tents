@@ -63,9 +63,13 @@
 		.right-side {
 			padding-left: 0;
 			padding-right: 0;
+			border-width: 25px;
 		}
 		.caption {
-			padding-left: 5px;
+			padding-left: 3px;
+			&::before {
+				width: 90%;
+			}
 		}
 		ul {
 			padding-left: 0;
@@ -76,6 +80,7 @@
 	}
 	@media (max-width: 768px) {
 		background: none;
+		background-color: $white;
 		.caption {
 			margin-top: -25px;
 			text-align: center;
