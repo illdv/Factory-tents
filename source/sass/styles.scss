@@ -2,6 +2,7 @@
 @import "variables.scss";
 @import "common.scss";
 @import "mixins.scss";
+@import "animate.scss";
 @import "./blocks/first-screen";
 @import "./blocks/produced";
 @import "./blocks/advantages";
@@ -19,3 +20,4 @@
 @import "./blocks/example-video.scss";
 @import "./blocks/feedback.scss";
 @import "./blocks/footer.scss";
+@import "./blocks/modal.scss";

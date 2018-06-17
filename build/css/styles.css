@@ -36,6 +36,162 @@ body {
   overflow-x: hidden;
   position: relative; }
 
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn; }
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp; }
+
+@-webkit-keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0; }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1; }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px); } }
+
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0; }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1; }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px); } }
+
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX; }
+
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft; }
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible; }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight; }
+
 .first-screen {
   background-image: url("../../img/first-back.jpg");
   background-repeat: no-repeat;
@@ -51,7 +207,7 @@ body {
   .first-screen::before {
     content: '';
     position: absolute;
-    width: 63vw;
+    width: 60vw;
     height: 100vh;
     background-image: url("../../img/frame-yellow.svg");
     background-repeat: no-repeat;
@@ -1747,9 +1903,7 @@ body {
       flex-direction: column;
       align-items: center; }
     .example-photo .carousel .image-block {
-      margin-bottom: 15px;
-      padding-left: 0;
-      padding-right: 0; }
+      margin-bottom: 15px; }
       .example-photo .carousel .image-block:last-child {
         margin-bottom: 0; } }
   .example-photo .carousel::after {
@@ -1998,6 +2152,7 @@ footer {
   padding: 30px 0;
   background-color: #2a2c30; }
   footer .privacy-policy {
+    text-decoration: none;
     margin-top: 10px;
     margin-bottom: 0;
     display: inline-block;
@@ -2008,23 +2163,27 @@ footer {
     line-height: 25.89px;
     color: #9aa2b2;
     letter-spacing: 0.32px;
-    border-bottom: 1px dotted #9aa2b2;
-    cursor: pointer; }
+    border-bottom: 1px dotted #9aa2b2; }
     footer .privacy-policy:hover {
       border-bottom: none;
       padding-bottom: 1px; }
     footer .privacy-policy:active {
       border-bottom: 1px dotted #9aa2b2; }
   footer .copyright {
-    color: #ffffff;
     font-family: "Open Sans";
     font-size: 13px;
     font-weight: 400;
     line-height: 25.89px;
     letter-spacing: 0.32px;
     margin-bottom: 0; }
-    footer .copyright p {
-      margin-bottom: 0; }
+    footer .copyright a {
+      margin-bottom: 0;
+      text-decoration: none;
+      color: #ffffff; }
+      footer .copyright a:hover {
+        opacity: 0.7; }
+      footer .copyright a::active {
+        opacity: 1; }
     footer .copyright img {
       padding-left: 10px;
       vertical-align: middle; }
@@ -2065,3 +2224,68 @@ footer {
   @media (max-width: 992px) {
     footer .copyright {
       margin-top: 15px; } }
+
+.modal .modal-content {
+  border: 10px solid #fbd34b;
+  padding: 40px;
+  position: relative; }
+  .modal .modal-content h5 {
+    color: #292727;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+    margin-bottom: 40px; }
+  .modal .modal-content .text-block {
+    text-transform: none; }
+  .modal .modal-content .close {
+    position: absolute;
+    top: 5px;
+    right: 10px; }
+  .modal .modal-content .form-request .form-group {
+    margin-bottom: 30px; }
+    .modal .modal-content .form-request .form-group:last-child {
+      margin-bottom: 0; }
+  .modal .modal-content .form-request label {
+    color: #8693a0;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 300; }
+  .modal .modal-content .form-request input {
+    color: #292727;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400; }
+  .modal .modal-content .form-request .submit {
+    background-color: #ffc500;
+    min-height: 55px;
+    color: #292727;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 30px; }
+    .modal .modal-content .form-request .submit:hover {
+      background-color: #f3b200;
+      color: black; }
+    .modal .modal-content .form-request .submit:active {
+      background-color: #ffc500;
+      color: #292727; }
+  .modal .modal-content .form-request .privacy-policy {
+    color: #8693a0;
+    text-decoration: none;
+    border-bottom: 1px dotted #9aa2b2; }
+    .modal .modal-content .form-request .privacy-policy:hover {
+      border-bottom: none;
+      padding-bottom: 1px; }
+    .modal .modal-content .form-request .privacy-policy:active {
+      border-bottom: 1px dotted #9aa2b2; }
+
+#thanks h5:first-child {
+  margin-top: 40px;
+  margin-bottom: 10px; }
+
+#thanks h5:last-child {
+  margin-bottom: 40px; }

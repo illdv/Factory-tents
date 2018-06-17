@@ -1,0 +1,73 @@
+.modal {
+	.modal-content {
+		border: 10px solid $yellow-lighter;
+		padding: 40px;
+		position: relative;
+		h5 {
+			color: $black;
+			font-size: 18px;
+			font-weight: 500;
+			text-transform: uppercase;
+			text-align: center;
+			margin-bottom: 0;
+			margin-bottom: 40px;
+		}
+		.text-block {
+			text-transform: none
+		}
+		.close {
+			position: absolute;
+			top: 5px;
+			right: 10px;
+		}
+		.form-request {
+			.form-group {
+				margin-bottom: 30px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+			label {
+				color: #8693a0;
+				font-family: "Open Sans";
+				font-size: 12px;
+				font-weight: 300;
+			}
+			input {
+				color: $black;
+				font-family: "Open Sans";
+				font-size: 16px;
+				font-weight: 400;
+			}
+			.submit {
+				@include btn-yellow;
+				width: 100%;
+				margin-bottom: 30px;
+			}
+			.privacy-policy {
+				color: #8693a0;
+				text-decoration: none;
+				border-bottom: 1px dotted #9aa2b2;
+				&:hover {
+					border-bottom: none;
+					padding-bottom: 1px;
+				}
+				&:active {
+					border-bottom: 1px dotted #9aa2b2;
+				}
+			}
+		}
+	}
+}
+
+#thanks {
+	h5 {
+		&:first-child {
+			margin-top: 40px;
+			margin-bottom: 10px;
+		}
+		&:last-child {
+			margin-bottom: 40px;
+		}
+	}
+}

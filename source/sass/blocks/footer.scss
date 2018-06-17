@@ -2,6 +2,7 @@ footer {
 	padding: 30px 0;
 	background-color: #2a2c30;
 	.privacy-policy {
+		text-decoration: none;
 		margin-top: 10px;
 		margin-bottom: 0;
 		display: inline-block;
@@ -13,7 +14,6 @@ footer {
 		color: #9aa2b2;
 		letter-spacing: 0.32px;
 		border-bottom: 1px dotted #9aa2b2;
-		cursor: pointer;
 		&:hover {
 			border-bottom: none;
 			padding-bottom: 1px;
@@ -23,15 +23,22 @@ footer {
 		}
 	}
 	.copyright {
-		color: #ffffff;
 		font-family: "Open Sans";
 		font-size: 13px;
 		font-weight: 400;
 		line-height: 25.89px;
 		letter-spacing: 0.32px;
 		margin-bottom: 0;
-		p {
+		a {
 			margin-bottom: 0;
+			text-decoration: none;
+			color: $white;
+			&:hover {
+				opacity: 0.7;
+			}
+			&::active {
+				opacity: 1;
+			}
 		}
 		img {
 			padding-left: 10px;
@@ -44,5 +51,4 @@ footer {
 			margin-top: 15px;
 		}
 	}
-
 }
