@@ -52,23 +52,23 @@
 		li:first-child {
 			margin-left: 90px;
 			&::before {
-				background-image: url('./../../img/produced-item-1.svg');
+				background: url('../../img/sprite/css_sprites.png') -300px -10px;
 			}
 		}
 		li:nth-child(2)::before {
-			background-image: url('./../../img/produced-item-2.svg');
+			background: url('../../img/sprite/css_sprites.png') -10px -155px;
 		}
 		li:nth-child(3) {
 			margin-left: 130px;
 			&::before {
-				background-image: url('./../../img/produced-item-3.svg');
+				background: url('../../img/sprite/css_sprites.png') -10px -10px;
 			}
 		}
 		li:last-child {
 			margin-left: 35px;
 			margin-bottom: 0;
 			&::before {
-				background-image: url('./../../img/produced-item-4.svg');
+				background: url('../../img/sprite/css_sprites.png');
 			}
 		}
 	}

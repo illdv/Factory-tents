@@ -49,19 +49,19 @@
 				background-position: center;
 			}
 			&:nth-child(1)::before {
-				background-image: url('./../../img/numerals-item-1.png')
+				background: url('../../img/sprite/css_sprites.png') -220px -300px;
 			}
 			&:nth-child(2)::before {
-				background-image: url('./../../img/numerals-item-2.png')
+				background: url('../../img/sprite/css_sprites.png') -445px -10px;
 			}
 			&:nth-child(3)::before {
-				background-image: url('./../../img/numerals-item-3.png')
+				background: url('../../img/sprite/css_sprites.png') -10px -407px;
 			}
 			&:nth-child(4)::before {
-				background-image: url('./../../img/numerals-item-4.png')
+				background: url('../../img/sprite/css_sprites.png') -445px -215px;
 			}
 			&:nth-child(5)::before {
-				background-image: url('./../../img/numerals-item-5.png')
+				background: url('../../img/sprite/css_sprites.png') -445px -142px;
 			}
 			p {
 				margin-bottom: 0;

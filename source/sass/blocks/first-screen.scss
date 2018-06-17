@@ -94,13 +94,18 @@
 			}
 		}
 		.triggers-elem-1::before {
-			background-image: url('../../img/first-icon-1.png');
+			width: 45px;
+			height: 30px;
+			background: url('../../img/sprite/css_sprites.png') -445px -338px;
+			;
 		}
 		.triggers-elem-2::before {
-			background-image: url('../../img/first-icon-2.png');
+			background: url('../../img/sprite/css_sprites.png');
+			background-position: -445px -83px;
 		}
 		.triggers-elem-3::before {
-			background-image: url('../../img/first-icon-3.png');
+			background: url('../../img/sprite/css_sprites.png');
+			background-position: -445px -284px;
 		}
 	}
 	.rhomb {

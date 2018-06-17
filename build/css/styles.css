@@ -306,11 +306,15 @@ body {
         background-size: contain;
         background-position: top; }
     .first-screen .triggers .triggers-elem-1::before {
-      background-image: url("../../img/first-icon-1.png"); }
+      width: 45px;
+      height: 30px;
+      background: url("../../img/sprite/css_sprites.png") -445px -338px; }
     .first-screen .triggers .triggers-elem-2::before {
-      background-image: url("../../img/first-icon-2.png"); }
+      background: url("../../img/sprite/css_sprites.png");
+      background-position: -445px -83px; }
     .first-screen .triggers .triggers-elem-3::before {
-      background-image: url("../../img/first-icon-3.png"); }
+      background: url("../../img/sprite/css_sprites.png");
+      background-position: -445px -284px; }
   .first-screen .rhomb {
     -webkit-transform: translateX(15%);
             transform: translateX(15%); }
@@ -460,18 +464,18 @@ body {
     .produced ul li:first-child {
       margin-left: 90px; }
       .produced ul li:first-child::before {
-        background-image: url("./../../img/produced-item-1.svg"); }
+        background: url("../../img/sprite/css_sprites.png") -300px -10px; }
     .produced ul li:nth-child(2)::before {
-      background-image: url("./../../img/produced-item-2.svg"); }
+      background: url("../../img/sprite/css_sprites.png") -10px -155px; }
     .produced ul li:nth-child(3) {
       margin-left: 130px; }
       .produced ul li:nth-child(3)::before {
-        background-image: url("./../../img/produced-item-3.svg"); }
+        background: url("../../img/sprite/css_sprites.png") -10px -10px; }
     .produced ul li:last-child {
       margin-left: 35px;
       margin-bottom: 0; }
       .produced ul li:last-child::before {
-        background-image: url("./../../img/produced-item-4.svg"); }
+        background: url("../../img/sprite/css_sprites.png"); }
   .produced .carousel {
     z-index: 20; }
     .produced .carousel .carousel-indicators {
@@ -575,7 +579,8 @@ body {
     margin: 0; }
     .advantages .official-coop p::before {
       content: '';
-      background-image: url("../../img/contract.png");
+      background-image: url("../../img/sprite/css_sprites.png");
+      background-position: -117px -300px;
       width: 83px;
       height: 75px;
       bottom: 0;
@@ -596,7 +601,8 @@ body {
     margin: 0; }
     .advantages .full-equip p::before {
       content: '';
-      background-image: url("../../img/key.png");
+      background-image: url("../../img/sprite/css_sprites.png");
+      background-position: -300px -155px;
       width: 82px;
       height: 97px;
       top: 0;
@@ -717,7 +723,8 @@ body {
           position: absolute;
           width: 87px;
           height: 87px;
-          background-image: url("../../img/3problem-no.png");
+          background-image: url("../../img/sprite/css_sprites.png");
+          background-position: -10px -300px;
           left: -50px;
           top: -9px; }
         .problems .line-1 p:first-of-type::before,
@@ -749,7 +756,8 @@ body {
           position: absolute;
           width: 35px;
           height: 35px;
-          background-image: url("../../img/3-problem-yes.png");
+          background-image: url("../../img/sprite/css_sprites.png");
+          background-position: -371px -300px;
           left: 0;
           top: 0; }
   @media (max-width: 1200px) {
@@ -917,15 +925,15 @@ body {
         background-repeat: no-repeat;
         background-position: center; }
       .numerals ul li:nth-child(1)::before {
-        background-image: url("./../../img/numerals-item-1.png"); }
+        background: url("../../img/sprite/css_sprites.png") -220px -300px; }
       .numerals ul li:nth-child(2)::before {
-        background-image: url("./../../img/numerals-item-2.png"); }
+        background: url("../../img/sprite/css_sprites.png") -445px -10px; }
       .numerals ul li:nth-child(3)::before {
-        background-image: url("./../../img/numerals-item-3.png"); }
+        background: url("../../img/sprite/css_sprites.png") -10px -407px; }
       .numerals ul li:nth-child(4)::before {
-        background-image: url("./../../img/numerals-item-4.png"); }
+        background: url("../../img/sprite/css_sprites.png") -445px -215px; }
       .numerals ul li:nth-child(5)::before {
-        background-image: url("./../../img/numerals-item-5.png"); }
+        background: url("../../img/sprite/css_sprites.png") -445px -142px; }
       .numerals ul li p {
         margin-bottom: 0;
         font-size: 14px;
@@ -1046,11 +1054,11 @@ body {
         background-repeat: no-repeat;
         background-position: center; }
       .virt-tour ul li:first-child::before {
-        background-image: url("../../img/virt-tour-item-1.png"); }
+        background: url("../../img/sprite/css_sprites.png") -79px -407px; }
       .virt-tour ul li:nth-child(2):before {
-        background-image: url("../../img/virt-tour-item-2.png"); }
+        background: url("../../img/sprite/css_sprites.png") -154px -407px; }
       .virt-tour ul li:last-child::before {
-        background-image: url("../../img/virt-tour-item-3.png"); }
+        background: url("../../img/sprite/css_sprites.png") -291px -300px; }
       .virt-tour ul li strong {
         font-weight: bold; }
       .virt-tour ul li p {
@@ -2256,11 +2264,11 @@ footer {
       background-repeat: no-repeat;
       background-position: center; }
     .modal .modal-content .form-request .form-group:nth-child(1)::before {
-      background-image: url("../../img/modal-icon-1.png"); }
+      background: url("../../img/sprite/css_sprites.png") -402px -191px; }
     .modal .modal-content .form-request .form-group:nth-child(2)::before {
-      background-image: url("../../img/modal-icon-2.png"); }
+      background: url("../../img/sprite/css_sprites.png") -402px -155px; }
     .modal .modal-content .form-request .form-group:nth-child(3)::before {
-      background-image: url("../../img/modal-icon-3.png"); }
+      background: url("../../img/sprite/css_sprites.png") -402px -226px; }
     .modal .modal-content .form-request .form-group:last-child {
       margin-bottom: 0; }
   .modal .modal-content .form-request label {

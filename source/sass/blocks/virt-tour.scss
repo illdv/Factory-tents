@@ -53,13 +53,13 @@
 				background-position: center;
 			}
 			&:first-child::before {
-				background-image: url('../../img/virt-tour-item-1.png');
+				background: url('../../img/sprite/css_sprites.png') -79px -407px;
 			}
 			&:nth-child(2):before {
-				background-image: url('../../img/virt-tour-item-2.png');
+				background: url('../../img/sprite/css_sprites.png') -154px -407px;
 			}
 			&:last-child::before {
-				background-image: url('../../img/virt-tour-item-3.png');
+				background: url('../../img/sprite/css_sprites.png') -291px -300px;
 			}
 			strong {
 				font-weight: bold;
@@ -150,7 +150,6 @@
 			}
 		}
 	}
-	@media (max-width: 768px) {}
 	@media (max-width: 576px) {
 		.left-side {
 			border: none;
