@@ -2244,17 +2244,34 @@ footer {
     top: 5px;
     right: 10px; }
   .modal .modal-content .form-request .form-group {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    position: relative; }
+    .modal .modal-content .form-request .form-group::before {
+      content: '';
+      position: absolute;
+      top: 36px;
+      right: 10px;
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .modal .modal-content .form-request .form-group:nth-child(1)::before {
+      background-image: url("../../img/modal-icon-1.png"); }
+    .modal .modal-content .form-request .form-group:nth-child(2)::before {
+      background-image: url("../../img/modal-icon-2.png"); }
+    .modal .modal-content .form-request .form-group:nth-child(3)::before {
+      background-image: url("../../img/modal-icon-3.png"); }
     .modal .modal-content .form-request .form-group:last-child {
       margin-bottom: 0; }
   .modal .modal-content .form-request label {
     color: #8693a0;
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
     font-size: 12px;
     font-weight: 300; }
   .modal .modal-content .form-request input {
+    padding-right: 35px;
     color: #292727;
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
     font-size: 16px;
     font-weight: 400; }
   .modal .modal-content .form-request .submit {
