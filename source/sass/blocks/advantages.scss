@@ -73,8 +73,7 @@
 			margin: 0;
 			&::before {
 				content: '';
-				background-image: url('../../img/sprite/css_sprites.png');
-				background-position: -117px -300px;
+				background: url('../../img/sprite/css_sprites.png')  -402px -117px;
 				width: 83px;
 				height: 75px;
 				bottom: 0;
@@ -100,8 +99,7 @@
 			margin: 0;
 			&::before {
 				content: '';
-				background-image: url('../../img/sprite/css_sprites.png');
-				background-position: -300px -155px;
+				background: url('../../img/sprite/css_sprites.png') -300px -10px;
 				width: 82px;
 				height: 97px;
 				top: 0;

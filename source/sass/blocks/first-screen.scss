@@ -96,16 +96,15 @@
 		.triggers-elem-1::before {
 			width: 45px;
 			height: 30px;
-			background: url('../../img/sprite/css_sprites.png') -445px -338px;
-			;
+			background: url('../../img/sprite/css_sprites.png')  -177px -369px;
 		}
 		.triggers-elem-2::before {
-			background: url('../../img/sprite/css_sprites.png');
-			background-position: -445px -83px;
+			width: 45px; height: 39px;
+			background: url('../../img/sprite/css_sprites.png')  -79px -300px;
 		}
 		.triggers-elem-3::before {
-			background: url('../../img/sprite/css_sprites.png');
-			background-position: -445px -284px;
+			width: 45px; height: 34px;
+			background: url('../../img/sprite/css_sprites.png') -112px -369px;
 		}
 	}
 	.rhomb {

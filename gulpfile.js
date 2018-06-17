@@ -44,17 +44,20 @@ gulp.task('serve', function () {
 
 gulp.task('images', function () {
   return gulp.src('source/img/**/*.{png,jpg,svg}')
-    .pipe(imagemin([
-      imagemin.optipng({
-        optimizationLevel: 3
-      }),
-      imagemin.jpegtran({
-        progressive: true
-      }),
-      imagemin.svgo()
-    ]))
+  .pipe(imagemin([
+    imagemin.gifsicle({interlaced: true}),
+    imagemin.jpegtran({progressive: true}),
+    imagemin.optipng({optimizationLevel: 3}),
+    imagemin.svgo({
+        plugins: [
+            {removeViewBox: true},
+            {cleanupIDs: false}
+        ]
+    })
+]))
     .pipe(gulp.dest('source/img'))
 })
+
 
 // gulp.tast('webp', function () {
 //   return gulp.src('source/img/**/*.{png,jpg}')

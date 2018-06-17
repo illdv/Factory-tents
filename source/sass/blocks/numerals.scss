@@ -49,19 +49,24 @@
 				background-position: center;
 			}
 			&:nth-child(1)::before {
-				background: url('../../img/sprite/css_sprites.png') -220px -300px;
+				width: 51px; height: 58px;
+				background: url('../../img/sprite/css_sprites.png') -402px -212px;
 			}
 			&:nth-child(2)::before {
-				background: url('../../img/sprite/css_sprites.png') -445px -10px;
+				width: 47px; height: 53px;
+				background: url('../../img/sprite/css_sprites.png') -300px -195px;
 			}
 			&:nth-child(3)::before {
-				background: url('../../img/sprite/css_sprites.png') -10px -407px;
+				width: 49px; height: 49px;
+				background: url('../../img/sprite/css_sprites.png') -10px -300px;
 			}
 			&:nth-child(4)::before {
-				background: url('../../img/sprite/css_sprites.png') -445px -215px;
+				width: 32px; height: 49px;
+				background: url('../../img/sprite/css_sprites.png')  -60px -369px;
 			}
 			&:nth-child(5)::before {
-				background: url('../../img/sprite/css_sprites.png') -445px -142px;
+				width: 30px; height: 53px;
+				background: url('../../img/sprite/css_sprites.png') -10px -369px;
 			}
 			p {
 				margin-bottom: 0;

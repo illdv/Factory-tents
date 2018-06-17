@@ -54,7 +54,7 @@
 		}
 	}
 	.line-1 p:first-child {
-		margin-left: 8.7%;
+		margin-left: 6%;
 	}
 	.line-2 p:first-child {
 		margin-left: 2.3%;
@@ -94,8 +94,7 @@
 					position: absolute;
 					width: 87px;
 					height: 87px;
-					background-image: url('../../img/sprite/css_sprites.png');
-					background-position: -10px -300px;
+					background: url('../../img/sprite/css_sprites.png')  -402px -10px;
 					left: -50px;
 					top: -9px;
 				}
@@ -122,8 +121,7 @@
 					position: absolute;
 					width: 35px;
 					height: 35px;
-					background-image: url('../../img/sprite/css_sprites.png');
-					background-position: -371px -300px;
+					background: url('../../img/sprite/css_sprites.png') -10px -442px;
 					left: 0;
 					top: 0;
 				}

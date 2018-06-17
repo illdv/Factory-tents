@@ -41,6 +41,13 @@
 			&:last-child {
 				margin-bottom: 0;
 			}
+			&::after {
+				content: '';
+				position: absolute;
+				left: 13px;
+				top: 17px;
+				z-index: 1;
+			}
 			&::before {
 				content: '';
 				position: absolute;
@@ -51,15 +58,22 @@
 				background-color: $yellow-darker;
 				background-repeat: no-repeat;
 				background-position: center;
+				z-index: 1;
 			}
-			&:first-child::before {
-				background: url('../../img/sprite/css_sprites.png') -79px -407px;
+			&:first-child::after {
+				top: 25px;
+				width: 55px; height: 31px;
+				background: url('../../img/sprite/css_sprites.png') -144px -300px;
 			}
-			&:nth-child(2):before {
-				background: url('../../img/sprite/css_sprites.png') -154px -407px;
+			&:nth-child(2):after {
+				left: 14px;
+				top: 30px;
+				width: 57px; height: 23px;
+				background: url('../../img/sprite/css_sprites.png') -219px -300px;
 			}
-			&:last-child::before {
-				background: url('../../img/sprite/css_sprites.png') -291px -300px;
+			&:last-child::after {
+				width: 60px; height: 48px;
+				background: url('../../img/sprite/css_sprites.png') -300px -127px;
 			}
 			strong {
 				font-weight: bold;
