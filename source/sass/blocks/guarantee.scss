@@ -99,10 +99,15 @@
 			margin-right: 15px;
 		}
 		ul {
+			padding-left: 15px;
+			padding-right: 15px;
+			margin-bottom: 0;
 			li {
 				margin-bottom: 10px;
-				font-size: 12px;
+				text-align: center;
 				strong {
+		padding-left: 0;
+					display: block;
 					font-size: 45px;
 				}
 			}

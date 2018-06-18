@@ -23,6 +23,7 @@ footer {
 		}
 	}
 	.copyright {
+		margin-top: auto;
 		font-family: "Open Sans";
 		font-size: 13px;
 		font-weight: 400;
@@ -41,14 +42,21 @@ footer {
 			}
 		}
 		img {
-			padding-left: 10px;
 			vertical-align: middle;
+			width: 50px;
+			object-fit: cover;
 		}
+	}
+	.phone{
+		margin-bottom: 10px;
+	}
+	.sign{
+		margin-top: 10px;
 	}
 	@include callback;
 	@media (max-width: 992px) {
 		.copyright {
-			margin-top: 15px;
+			margin-top: 30px;
 		}
 	}
 }

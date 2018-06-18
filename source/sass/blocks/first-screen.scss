@@ -4,9 +4,10 @@
 	position: relative;
 	background-size: cover;
 	z-index: 0;
+	height: 84.4%;
 	.container {
 		padding-top: 15px;
-		height: 84.4vh;
+		height: 84.4%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -15,7 +16,7 @@
 		content: '';
 		position: absolute;
 		width: 60vw;
-		height: 100vh;
+		height: 118.4%;
 		background-image: url('../../img/frame-yellow.svg');
 		background-repeat: no-repeat;
 		background-position: 70% 100%;

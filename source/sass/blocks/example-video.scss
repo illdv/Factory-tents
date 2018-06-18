@@ -44,14 +44,17 @@
 			line-height: 24px;
 			margin-bottom: 0;
 		}
-		img {
-			object-fit: cover;
-		}
+	}
+	.embed-responsive {
+		height: 300px;
 	}
 	@media (max-width: 1200px) {
 		&::after {
 			top: -8%;
 			right: -28%;
+		}
+		.embed-responsive {
+			height: 200px;
 		}
 	}
 	@media (max-width: 992px) {
@@ -61,6 +64,10 @@
 		&::after {
 			top: -8%;
 			right: -35%;
+		}
+		.embed-responsive {
+			height: 150px;
+
 		}
 	}
 	@media (max-width: 768px) {
