@@ -6332,7 +6332,7 @@ body {
       .guarantee .caption {
         padding-left: 3px; }
         .guarantee .caption::before {
-          width: 90%; }
+          width: 100%; }
       .guarantee ul {
         padding-left: 0; }
         .guarantee ul strong {
@@ -6513,7 +6513,7 @@ body {
       -webkit-transform: rotate(125deg);
               transform: rotate(125deg); }
     .type-tents::before {
-      right: -25%; }
+      display: none; }
     .type-tents .under {
       flex-direction: column;
       align-items: center; }
@@ -6558,13 +6558,30 @@ body {
 
 .standing {
   padding: 50px 0;
-  background-image: url("../../img/standing-romb.png"), url("../../img/standing-back.jpg");
+  background-image: url("../../img/standing-romb.png");
   background-repeat: no-repeat;
   background-position: 50% 0, left;
   background-size: 20% 55%, 50% 100%;
-  background-color: #f4f3f3;
-  -o-object-fit: cover;
-     object-fit: cover; }
+  position: relative; }
+  .standing::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("../../img/standing-back.jpg");
+    top: 0;
+    left: 0;
+    z-index: -1; }
+  .standing::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    top: 0;
+    right: 0;
+    z-index: -1; }
   .standing .caption {
     margin-bottom: 100px;
     -webkit-transform: translateX(-5%);
@@ -6588,7 +6605,7 @@ body {
       margin-bottom: 0; }
   .standing .carousel .carousel-indicators {
     margin-bottom: 0;
-    bottom: 0; }
+    bottom: -15px; }
     .standing .carousel .carousel-indicators li {
       width: 10px;
       height: 10px;
@@ -6596,6 +6613,13 @@ body {
       background-color: #c6c6c6; }
       .standing .carousel .carousel-indicators li.active {
         background-color: #fbd34b; }
+  .standing .carousel .image-block {
+    margin-left: 5px; }
+    .standing .carousel .image-block img {
+      -o-object-fit: contain;
+         object-fit: contain;
+      width: 220px;
+      height: 310px; }
   @media (max-width: 1200px) {
     .standing {
       background-size: 25% 50%, 50% 100%; } }
@@ -6778,21 +6802,11 @@ body {
     .reviews .carousel .carousel-item {
       padding-top: 100px; }
       .reviews .carousel .carousel-item img {
-        border-radius: 50%;
-        margin-bottom: 15px; }
-      .reviews .carousel .carousel-item .text-block {
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        margin-bottom: 15px;
-        width: 50%; }
-      .reviews .carousel .carousel-item .sigh {
-        color: #fbd34b;
-        font-style: italic;
-        font-size: 16px;
-        font-weight: 500;
-        margin-bottom: 0; }
+        width: auto;
+        height: 430px;
+        -o-object-fit: cover;
+           object-fit: cover;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(0, 0, 0, 0.7); }
     .reviews .carousel .carousel-indicators {
       bottom: -0;
       margin-bottom: 0; }
@@ -6831,8 +6845,8 @@ body {
           display: none; }
         .reviews .caption::after {
           display: none; }
-      .reviews .carousel .carousel-item .text-block {
-        width: 90%; } }
+      .reviews .carousel .carousel-item img {
+        margin-top: 20px; } }
 
 .example-video {
   padding: 50px 0;

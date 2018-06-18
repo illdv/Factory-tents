@@ -161,7 +161,7 @@
 			transform: rotate(125deg);
 		}
 		&::before {
-			right: -25%;
+		display: none;
 		}
 		.under {
 			flex-direction: column;
