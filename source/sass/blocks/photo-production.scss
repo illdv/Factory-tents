@@ -24,19 +24,12 @@
   .carousel_wrap {
     margin-top: 125px;
     position: relative;
-  }
-  #waterwheel {
-    width: 90%;
-    margin: 0px auto;
-    height: 350px;
-    position: relative;
     &::before {
       content: '';
       position: absolute;
       width: 370px;
       height: 390px;
       border: 25px solid $yellow-lighter;
-      top: -20px;
       left: 50%;
       margin-left: -185px;
       z-index: 99;
@@ -44,6 +37,13 @@
     &:hover::before {
       border-color: $yellow-darker;
     }
+  }
+  #waterwheel {
+    overflow: hidden;
+    width: 90%;
+    margin: 0px auto;
+    height: 395px;
+    position: relative;
   }
   .nav_button {
     position: absolute;
@@ -109,18 +109,18 @@
     }
   }
   @media (max-width: 576px) {
-    #waterwheel::before {
-      border: none;
+    .carousel_wrap::before {
+      display: none;
     }
     .nav_button.prev_button {
       left: auto;
       left: 0%;
-      top: 105%
+      top: 95%
     }
     .nav_button.next_button {
       left: auto;
       right: 0%;
-      top: 105%
+      top: 95%
     }
   }
 }

@@ -98,19 +98,22 @@
 		.triggers-elem-1::before {
 			width: 45px;
 			height: 30px;
-			background: url('../../img/sprite/css_sprites.png')  -177px -369px;
+			background: url('../../img/sprite/css_sprites.png') -177px -369px;
 		}
 		.triggers-elem-2::before {
-			width: 45px; height: 39px;
-			background: url('../../img/sprite/css_sprites.png')  -79px -300px;
+			width: 45px;
+			height: 39px;
+			background: url('../../img/sprite/css_sprites.png') -79px -300px;
 		}
 		.triggers-elem-3::before {
-			width: 45px; height: 34px;
+			width: 45px;
+			height: 34px;
 			background: url('../../img/sprite/css_sprites.png') -112px -369px;
 		}
 	}
 	.rhomb {
-		transform: translateX(15%);
+		width: 430px;
+		transform: translateX(119%);
 		span {
 			font-size: 36px;
 			font-weight: 700;
@@ -140,7 +143,7 @@
 			background-position: 100% 100%;
 		}
 		.rhomb {
-			transform: translateX(18%);
+			transform: translateX(98%);
 		}
 	}
 	@media (max-width: 992px) {
@@ -155,6 +158,7 @@
 		}
 		.rhomb {
 			transform: none;
+			width: auto;
 		}
 	}
 	@media (max-width: 768px) {

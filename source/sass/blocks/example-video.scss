@@ -1,6 +1,7 @@
 .example-video {
 	padding: 50px 0;
 	position: relative;
+	overflow: hidden;
 	&::after {
 		content: '';
 		position: absolute;
@@ -68,7 +69,6 @@
 		}
 		.embed-responsive {
 			height: 150px;
-
 		}
 	}
 	@media (max-width: 768px) {

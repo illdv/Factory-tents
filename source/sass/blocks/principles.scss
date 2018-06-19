@@ -5,6 +5,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  overflow: hidden;
   &::before {
     content: '';
     position: absolute;
@@ -166,8 +167,9 @@
   }
   @media (max-width: 576px) {
     &::before {
-      width: 200%;
-      right: -50%;
+      width: 100%;
+      transform: skew(0);
+      right: 0;
     }
     ul {
       li {

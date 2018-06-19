@@ -99,5 +99,9 @@
 			border-width: 25px;
 		}
 	}
-	@media (max-width: 576px) {}
+	@media (max-width: 576px) {
+		.player-2 {
+			border-width: 0;
+		}
+	}
 }
