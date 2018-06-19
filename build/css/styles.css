@@ -4965,7 +4965,8 @@ body {
   position: relative;
   background-size: cover;
   z-index: 0;
-  height: 84.4%; }
+  height: 84.4%;
+  background-position: center; }
   .first-screen .container {
     padding-top: 15px;
     height: 84.4%;
@@ -6613,13 +6614,17 @@ body {
       background-color: #c6c6c6; }
       .standing .carousel .carousel-indicators li.active {
         background-color: #fbd34b; }
-  .standing .carousel .image-block {
-    margin-left: 5px; }
-    .standing .carousel .image-block img {
-      -o-object-fit: contain;
-         object-fit: contain;
-      width: 220px;
-      height: 310px; }
+  .standing .carousel .image-block img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 220px;
+    height: 310px; }
+  .standing .carousel .carousel-item:nth-child(3) .image-block:first-child {
+    -webkit-transform: rotate(-0.5deg);
+            transform: rotate(-0.5deg); }
+  .standing .carousel .carousel-item:nth-child(3) .image-block:last-child {
+    -webkit-transform: translateY(10px) rotate(-0.6deg);
+            transform: translateY(10px) rotate(-0.6deg); }
   @media (max-width: 1200px) {
     .standing {
       background-size: 25% 50%, 50% 100%; } }
@@ -6637,6 +6642,8 @@ body {
   @media (max-width: 768px) {
     .standing {
       background-image: none; }
+      .standing::before {
+        background-image: none; }
       .standing .caption {
         -webkit-transform: translate(0);
                 transform: translate(0);
@@ -6646,7 +6653,10 @@ body {
   @media (max-width: 576px) {
     .standing .carousel-item > div {
       flex-direction: column;
-      align-items: center; } }
+      align-items: center; }
+    .standing .carousel-item:last-child .image-block {
+      margin-bottom: 155px;
+      margin-top: 155px; } }
 
 .example-photo {
   padding-top: 50px;
@@ -6882,7 +6892,8 @@ body {
     .example-video .gallery-items h3 {
       font-size: 16px;
       font-weight: 700;
-      margin-top: 15px; }
+      margin-top: 15px;
+      margin-bottom: 0; }
     .example-video .gallery-items p {
       font-size: 14px;
       font-weight: 400;
