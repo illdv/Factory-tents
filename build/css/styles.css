@@ -5864,20 +5864,12 @@ body {
     height: 100%;
     width: 50%; }
   .virt-tour .player__video {
-    -o-object-fit: inherit;
-       object-fit: inherit;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 50% 50%;
+       object-position: 50% 50%;
     cursor: pointer;
     height: 100%; }
-  .virt-tour .player__button {
-    background: none;
-    border: 0;
-    line-height: 1;
-    color: white;
-    text-align: center;
-    outline: 0;
-    padding: 0;
-    cursor: pointer;
-    max-width: 50px; }
   .virt-tour .player__controls {
     display: flex;
     position: absolute;
@@ -5891,7 +5883,7 @@ body {
     -webkit-transform: translateY(0);
             transform: translateY(0); }
   .virt-tour .player-1:hover .progress-1 {
-    height: 15px; }
+    height: 25px; }
   .virt-tour .progress-1 {
     position: relative;
     display: flex;
@@ -5902,6 +5894,15 @@ body {
     cursor: ew-resize; }
   .virt-tour .progress__filled-1 {
     background: #fbd34b; }
+  .virt-tour .off {
+    background-image: url("../../img/baseline-volume_up-24px.svg") !important; }
+  .virt-tour #unmuteButton {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    background-image: url("../../img/baseline-volume_off-24px.svg");
+    background-position: center;
+    background-color: #fbd34b; }
   @media (max-width: 992px) {
     .virt-tour .player-1 {
       position: relative;

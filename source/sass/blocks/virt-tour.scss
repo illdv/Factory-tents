@@ -99,20 +99,10 @@
 		width: 50%;
 	}
 	.player__video {
-		object-fit: inherit;
+		object-fit: cover;
+		object-position: 50% 50%;
 		cursor: pointer;
 		height: 100%;
-	}
-	.player__button {
-		background: none;
-		border: 0;
-		line-height: 1;
-		color: white;
-		text-align: center;
-		outline: 0;
-		padding: 0;
-		cursor: pointer;
-		max-width: 50px;
 	}
 	.player__controls {
 		display: flex;
@@ -127,7 +117,7 @@
 		transform: translateY(0);
 	}
 	.player-1:hover .progress-1 {
-		height: 15px;
+		height: 25px;
 	}
 	.progress-1 {
 		position: relative;
@@ -141,7 +131,17 @@
 	.progress__filled-1 {
 		background: $yellow-lighter;
 	}
-	@media (max-width: 1200px) {}
+	.off {
+		background-image: url('../../img/baseline-volume_up-24px.svg') !important;
+	}
+	#unmuteButton {
+		width: 25px;
+		height: 25px;
+		position: relative;
+		background-image: url('../../img/baseline-volume_off-24px.svg');
+		background-position: center;
+		background-color: $yellow-lighter;
+	}
 	@media (max-width: 992px) {
 		.player-1 {
 			position: relative;
