@@ -7173,3 +7173,24 @@ footer {
 
 #thanks h5:last-child {
   margin-bottom: 40px; }
+
+#policy .close {
+  position: absolute;
+  top: 5px;
+  right: 10px; }
+
+#policy .agree {
+  background-color: #ffc500;
+  min-height: 55px;
+  color: #292727;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%; }
+  #policy .agree:hover {
+    background-color: #f3b200;
+    color: black; }
+  #policy .agree:active {
+    background-color: #ffc500;
+    color: #292727; }
