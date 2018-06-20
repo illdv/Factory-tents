@@ -96,3 +96,14 @@
     }
   }
 }
+#policy{
+  .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+  .agree{
+    @include btn-yellow;
+    width: 100%;
+  }
+}
