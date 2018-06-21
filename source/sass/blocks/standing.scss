@@ -2,8 +2,8 @@
 	padding: 50px 0;
 	background-image: url('../../img/standing-romb.png');
 	background-repeat: no-repeat;
-	background-position: 50% 0, left;
-	background-size: 20% 55%, 50% 100%;
+	background-position: 50% 0;
+	background-size: 18% 55%;
 	position: relative;
 	&::before {
 		content: '';
@@ -14,16 +14,6 @@
 		background-image: url('../../img/standing-back.jpg');
 		top: 0;
 		left: 0;
-		z-index: -1;
-	}
-	&::after {
-		content: '';
-		position: absolute;
-		width: 50%;
-		height: 100%;
-		background-color: $white;
-		top: 0;
-		right: 0;
 		z-index: -1;
 	}
 	.caption {

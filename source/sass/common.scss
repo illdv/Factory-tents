@@ -4,7 +4,9 @@ body {
 	background-color: $white;
 	color: $black;
 }
-
+body.modal-open{
+padding-right: 15px!important;
+}
 .carousel-inner:hover .carousel-control-prev,
 .carousel-inner:hover .carousel-control-next {
 	opacity: 1;

@@ -29,7 +29,7 @@ gulp.task('uncss', function () {
   var plugins = [
     uncss({
       html: ['build/index.html'],
-      ignore: ['.animated', '.animated.infinite', '.fadeIn', '.fadeInUp', 'flipInX', '.slideInLeft', '.slideInRight', '.carousel-item-right', '.carousel-item-left', '.carousel-item-next', '.carousel-item-prev', '.show']
+      ignore: ['.animated', '.animated.infinite', '.fadeIn', '.fadeInUp', 'flipInX', '.slideInLeft', '.slideInRight', /\.modal-open/,  /\.show/ , /\.modal-backdrop/, /\.fade/,  /\.carousel-item-prev/,  /\.carousel-item-next/,  /\.carousel-item-left/, /\.carousel-item-right/, /\.was-validated/ ]
     }),
   ];
   return gulp.src('build/css/styles.min.css')
