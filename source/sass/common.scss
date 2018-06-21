@@ -4,3 +4,24 @@ body {
 	background-color: $white;
 	color: $black;
 }
+
+.carousel-inner:hover .carousel-control-prev,
+.carousel-inner:hover .carousel-control-next {
+	opacity: 1;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+	width: 25px;
+	height: 25px;
+}
+
+.carousel-control-next {
+	right: -5%;
+	z-index: 100;
+}
+
+.carousel-control-prev {
+	left: -5%;
+	z-index: 100;
+}

@@ -131,16 +131,21 @@
 	.progress__filled-1 {
 		background: $yellow-lighter;
 	}
-	.off {
-		background-image: url('../../img/baseline-volume_up-24px.svg') !important;
-	}
+
 	#unmuteButton {
 		width: 25px;
 		height: 25px;
 		position: relative;
-		background-image: url('../../img/baseline-volume_off-24px.svg');
-		background-position: center;
+
 		background-color: $yellow-lighter;
+		#off, #on{
+			position: absolute;
+			top: -1.5px;
+			left: -1.5px;
+		}
+		.hidden{
+			visibility: hidden;
+		}
 	}
 	@media (max-width: 992px) {
 		.player-1 {

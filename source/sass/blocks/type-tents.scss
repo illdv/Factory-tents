@@ -17,7 +17,7 @@
 		content: '';
 		position: absolute;
 		bottom: -60%;
-		right: -20%;
+		right: 0;
 		width: 900px;
 		height: 900px;
 		transform: rotate(135deg);
@@ -133,7 +133,7 @@
 			position: absolute;
 			top: -25%;
 			left: -5%;
-			width: 50%;
+			width: 60%;
 			height: 560px;
 			transform: rotate(100deg);
 			border: 40px solid $yellow-lighter;
@@ -141,7 +141,7 @@
 		&::before {
 			bottom: -30%;
 			right: -5%;
-			width: 50%;
+			width: 60%;
 			height: 560px;
 			transform: rotate(100deg);
 			border: 40px solid #ebebeb;

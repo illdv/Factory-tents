@@ -63,16 +63,16 @@
 	.carousel {
 		padding-bottom: 40px;
 		margin-bottom: 50px;
+		.carousel-inner {
+			margin-top: 100px;
+		}
 		.carousel-item {
-			padding-top: 100px;
 			img {
 				width: auto;
 				height: 430px;
 				object-fit: cover;
-				box-shadow: 0 2px 4px rgba(0,0,0,.5), 0 1px 2px rgba(0,0,0,.7)
+				box-shadow: 0 2px 4px rgba(0, 0, 0, .5), 0 1px 2px rgba(0, 0, 0, .7)
 			}
-
-
 		}
 		.carousel-indicators {
 			bottom: -0;
@@ -82,7 +82,7 @@
 	}
 	@media (max-width: 992px) {
 		&::before {
-			width: 55%;
+			width: 58%;
 		}
 		.caption::after {
 			height: 62%;
@@ -123,10 +123,9 @@
 		}
 		.carousel {
 			.carousel-item {
-	
-img{
-	margin-top: 20px;
-}
+				img {
+					margin-top: 20px;
+				}
 			}
 		}
 	}

@@ -5,26 +5,26 @@
 	background-position: 50% 0, left;
 	background-size: 20% 55%, 50% 100%;
 	position: relative;
-	&::before{
+	&::before {
 		content: '';
 		position: absolute;
 		width: 50%;
 		height: 100%;
 		background-size: cover;
-		background-image:  url('../../img/standing-back.jpg');
-top: 0;
-left: 0;
-z-index: -1;
+		background-image: url('../../img/standing-back.jpg');
+		top: 0;
+		left: 0;
+		z-index: -1;
 	}
-	&::after{
+	&::after {
 		content: '';
 		position: absolute;
 		width: 50%;
 		height: 100%;
 		background-color: $white;
-top: 0;
-right:  0;
-z-index: -1;
+		top: 0;
+		right: 0;
+		z-index: -1;
 	}
 	.caption {
 		margin-bottom: 100px;
@@ -59,25 +59,31 @@ z-index: -1;
 			@include carousel-indicators;
 		}
 		.image-block {
-
-			img{
+			&:last-child {
+				margin-left: 5px;
+			}
+			img {
 				object-fit: contain;
 				width: 220px;
 				height: 310px;
 			}
-
 		}
-		.carousel-item:nth-child(3){
-		.image-block:first-child{
-			transform: rotate(-0.5deg);
-		}
-		.image-block:last-child{
-			transform: translateY(10px) rotate(-0.6deg);
-		}
+		.carousel-item:nth-child(3) {
+			.image-block:first-child {
+				transform: rotate(-0.5deg);
+			}
+			.image-block:last-child {
+				transform: translateY(10px) rotate(-0.6deg);
+			}
 		}
 	}
 	@media (max-width: 1200px) {
 		background-size: 25% 50%, 50% 100%;
+		.carousel .image-block img {
+			object-fit: contain;
+			width: 210px;
+			height: 300px;
+		}
 	}
 	@media (max-width: 992px) {
 		background-size: 27% 51%, 50% 100%;
@@ -91,10 +97,15 @@ z-index: -1;
 				margin-bottom: 10px;
 			}
 		}
+		.carousel .image-block img {
+			object-fit: contain;
+			width: 190px;
+			height: 280px;
+		}
 	}
 	@media (max-width: 768px) {
 		background-image: none;
-		&::before{
+		&::before {
 			background-image: none;
 		}
 		.caption {
@@ -110,12 +121,12 @@ z-index: -1;
 			flex-direction: column;
 			align-items: center;
 		}
-		.carousel-item .image-block{
-		
+		.carousel-item .image-block:last-child {
+			margin-left: 0;
 		}
-		.carousel-item:last-child .image-block{
-			margin-bottom: 155px;
-			margin-top: 155px;
+		.carousel-item:nth-child(4) .image-block {
+			margin-bottom: 140px;
+			margin-top: 140px;
 		}
 	}
 }
