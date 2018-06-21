@@ -1,3 +1,5 @@
+/* uncss:ignore */
+
 .animated {
 	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
@@ -5,10 +7,14 @@
 	animation-fill-mode: both;
 }
 
+/* uncss:ignore */
+
 .animated.infinite {
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
 }
+
+/* uncss:ignore */
 
 @-webkit-keyframes fadeIn {
 	from {
@@ -19,6 +25,8 @@
 	}
 }
 
+/* uncss:ignore */
+
 @keyframes fadeIn {
 	from {
 		opacity: 0;
@@ -28,10 +36,14 @@
 	}
 }
 
+/* uncss:ignore */
+
 .fadeIn {
 	-webkit-animation-name: fadeIn;
 	animation-name: fadeIn;
 }
+
+/* uncss:ignore */
 
 @-webkit-keyframes fadeInDown {
 	from {
@@ -46,6 +58,8 @@
 	}
 }
 
+/* uncss:ignore */
+
 @-webkit-keyframes fadeInUp {
 	from {
 		opacity: 0;
@@ -58,6 +72,8 @@
 		transform: translate3d(0, 0, 0);
 	}
 }
+
+/* uncss:ignore */
 
 @keyframes fadeInUp {
 	from {
@@ -72,10 +88,14 @@
 	}
 }
 
+/* uncss:ignore */
+
 .fadeInUp {
 	-webkit-animation-name: fadeInUp;
 	animation-name: fadeInUp;
 }
+
+/* uncss:ignore */
 
 @-webkit-keyframes flipInX {
 	from {
@@ -106,6 +126,8 @@
 	}
 }
 
+/* uncss:ignore */
+
 @keyframes flipInX {
 	from {
 		-webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
@@ -135,12 +157,16 @@
 	}
 }
 
+/* uncss:ignore */
+
 .flipInX {
 	-webkit-backface-visibility: visible !important;
 	backface-visibility: visible !important;
 	-webkit-animation-name: flipInX;
 	animation-name: flipInX;
 }
+
+/* uncss:ignore */
 
 @-webkit-keyframes slideInLeft {
 	from {
@@ -154,6 +180,8 @@
 	}
 }
 
+/* uncss:ignore */
+
 @keyframes slideInLeft {
 	from {
 		-webkit-transform: translate3d(-100%, 0, 0);
@@ -166,10 +194,14 @@
 	}
 }
 
+/* uncss:ignore */
+
 .slideInLeft {
 	-webkit-animation-name: slideInLeft;
 	animation-name: slideInLeft;
 }
+
+/* uncss:ignore */
 
 @-webkit-keyframes slideInRight {
 	from {
@@ -183,6 +215,8 @@
 	}
 }
 
+/* uncss:ignore */
+
 @keyframes slideInRight {
 	from {
 		-webkit-transform: translate3d(100%, 0, 0);
@@ -194,6 +228,8 @@
 		transform: translate3d(0, 0, 0);
 	}
 }
+
+/* uncss:ignore */
 
 .slideInRight {
 	-webkit-animation-name: slideInRight;

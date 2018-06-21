@@ -3,6 +3,7 @@ const sass = require('gulp-sass');
 const plumber = require('gulp-plumber');
 const postcss = require('gulp-postcss')
 const autoprefixer = require('autoprefixer');
+const uncss = require('postcss-uncss');
 const minify = require('gulp-csso')
 const imagemin = require('gulp-imagemin')
 const webp = require('gulp-webp');
@@ -19,13 +20,22 @@ gulp.task('styles', function () {
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([autoprefixer()]))
-    .pipe(gulp.dest('build/css'))
     .pipe(minify())
     .pipe(rename('styles.min.css'))
     .pipe(gulp.dest('build/css'))
     .pipe(server.stream())
 });
-
+gulp.task('uncss', function () {
+  var plugins = [
+    uncss({
+      html: ['build/index.html'],
+      ignore: ['.animated', '.animated.infinite', '.fadeIn', '.fadeInUp', 'flipInX', '.slideInLeft', '.slideInRight', '.carousel-item-right', '.carousel-item-left', '.carousel-item-next', '.carousel-item-prev', '.show']
+    }),
+  ];
+  return gulp.src('build/css/styles.min.css')
+    .pipe(postcss(plugins))
+    .pipe(gulp.dest('build/css'));
+});
 
 gulp.task('minHtml', function () {
   return gulp.src('source/*.html')
