@@ -80,10 +80,11 @@
 
 @mixin carousel-indicators {
 	li {
-		width: 10px;
-		height: 10px;
+		width: 11px;
+		height: 11px;
 		border-radius: 50%;
 		background-color: #c6c6c6;
+		border: 1px solid $black;
 		&.active {
 			background-color: $yellow-lighter;
 		}
