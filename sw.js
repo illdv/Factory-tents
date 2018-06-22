@@ -1,6 +1,3 @@
-const CACHE = 'cache-and-update-v1';
-
-// При установке воркера мы должны закешировать часть данных (статику).
 self.addEventListener('install', (event) => {
     event.waitUntil(
         caches.open(CACHE).then((cache) =>
