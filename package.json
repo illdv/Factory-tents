@@ -23,6 +23,7 @@
     "gulp-postcss": "^7.0.1",
     "gulp-rename": "^1.2.3",
     "gulp-sass": "^4.0.1",
+    "gulp-svgo": "^1.5.4",
     "gulp-webp": "^3.0.0",
     "postcss-uncss": "^0.16.1",
     "uncss": "^0.16.2"

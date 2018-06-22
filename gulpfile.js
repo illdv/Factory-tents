@@ -12,7 +12,7 @@ const htmlclean = require('gulp-htmlclean');
 const jsmin = require('gulp-jsmin');
 const server = require('browser-sync').create();
 const del = require('del');
-
+const svgo = require('gulp-svgo');
 
 gulp.task('styles', function () {
   return gulp
@@ -29,7 +29,7 @@ gulp.task('uncss', function () {
   var plugins = [
     uncss({
       html: ['build/index.html'],
-      ignore: ['.animated', '.animated.infinite', '.fadeIn', '.fadeInUp', 'flipInX', '.slideInLeft', '.slideInRight', /\.modal-open/,  /\.show/ , /\.modal-backdrop/, /\.fade/,  /\.carousel-item-prev/,  /\.carousel-item-next/,  /\.carousel-item-left/, /\.carousel-item-right/, /\.was-validated/ ]
+      ignore: ['.animated', '.animated.infinite', '.fadeIn', '.fadeInUp', 'flipInX', '.slideInLeft', '.slideInRight', /\.modal-open/, /\.show/, /\.modal-backdrop/, /\.fade/, /\.carousel-item-prev/, /\.carousel-item-next/, /\.carousel-item-left/, /\.carousel-item-right/, /\.was-validated/]
     }),
   ];
   return gulp.src('build/css/styles.min.css')

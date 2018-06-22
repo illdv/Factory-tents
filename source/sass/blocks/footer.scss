@@ -3,7 +3,6 @@ footer {
 	background-color: #2a2c30;
 	.privacy-policy {
 		text-decoration: none;
-		margin-top: 10px;
 		margin-bottom: 0;
 		display: inline-block;
 		vertical-align: middle;
@@ -47,11 +46,11 @@ footer {
 			object-fit: cover;
 		}
 	}
-	.phone{
+	.phone {
 		margin-bottom: 10px;
 	}
-	.sign{
-		margin-top: 10px;
+	.sign {
+		margin-top: 23px;
 	}
 	@include callback;
 	@media (max-width: 992px) {

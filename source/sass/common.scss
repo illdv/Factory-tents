@@ -4,9 +4,11 @@ body {
 	background-color: $white;
 	color: $black;
 }
-body.modal-open{
-padding-right: 15px!important;
+
+body.modal-open {
+	padding-right: 15px !important;
 }
+
 .carousel-inner:hover .carousel-control-prev,
 .carousel-inner:hover .carousel-control-next {
 	opacity: 1;
@@ -26,4 +28,8 @@ padding-right: 15px!important;
 .carousel-control-prev {
 	left: -5%;
 	z-index: 100;
+}
+
+.logo {
+	height: 100px;
 }
