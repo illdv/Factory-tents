@@ -1,6 +1,6 @@
 .problems {
 	padding: 50px 0;
-	background-image: url('../../img/3problem-back.jpg');
+	// background-image: url('../../img/3problem-back.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -54,20 +54,24 @@
 		}
 	}
 	.line-1 p:first-child {
-		margin-left: 8.7%;
+		margin-left: 18%;
 	}
 	.line-2 p:first-child {
-		margin-left: 2.3%;
-	}
-	.line-1 p:last-child {
-		margin-right: -11.5%;
-	}
-	.line-2 p:last-child {
-		margin-right: -4%;
+		margin-left: 11.8%;
 	}
 	.line-3 p:first-child {
-		margin-left: -2%;
+		margin-left: 7.5%;
 	}
+	.line-1 p:last-child {
+		margin-right: 5%;
+	}
+	.line-2 p:last-child {
+		margin-right: 10%;
+	}
+	.line-3 p:last-child {
+		margin-right: 13%;
+	}
+
 	.line-1,
 	.line-2,
 	.line-3 {
@@ -88,7 +92,6 @@
 				display: flex;
 				align-items: center;
 				z-index: 1;
-				transform: translateX(27%);
 				&::after {
 					content: '';
 					position: absolute;
@@ -115,7 +118,7 @@
 				line-height: 23.83px;
 				padding-left: 55px;
 				margin-bottom: 75px;
-				transform: translateX(-175px);
+	
 				&::after {
 					content: '';
 					position: absolute;
@@ -130,51 +133,58 @@
 	}
 	@media (max-width: 1200px) {
 		.line-1 p:first-child {
-			margin-left: 7%;
+			margin-left: 16.5%;
 		}
 		.line-2 p:first-child {
-			margin-left: 2%;
+			margin-left: 11.1%;
 		}
 		.line-3 p:first-child {
-			margin-left: -4%;
+			margin-left: 5.4%;
 		}
-		.line-1 p:last-child {
-			margin-right: -14.5%;
-		}
+	
 		.line-2 p:last-child {
-			margin-right: -9%;
+margin-right: 9%;
 		}
-		.line-3 p:last-child {
-			margin-right: -3.5%;
-		}
+
 	}
 	@media (max-width: 992px) {
+		background-position: 48% 50%;
 		.caption {
 			margin-bottom: 70px;
 		}
 		.line-1,
 		.line-2,
 		.line-3 {
-			font-size: 14px;
+			font-size: 16px;
+			p {
+				&:first-of-type {
+					width: 39%;
+					&::after{
+						left: -38px;
+					}
+				}
+			}
 		}
+
 		.line-1 p:first-child {
-			margin-left: 8.5%;
+			margin-left: 18.1%;
 		}
 		.line-2 p:first-child {
-			margin-left: 1.5%;
+			margin-left: 11.3%;
 		}
 		.line-3 p:first-child {
-			margin-left: -6%;
+			margin-left: 2.8%;
 		}
 		.line-1 p:last-child {
-			margin-right: -20%;
+			margin-right: 0%;
 		}
 		.line-2 p:last-child {
-			margin-right: -15%;
+			margin-right: 4%;
 		}
 		.line-3 p:last-child {
-			margin-right: -10%;
+			margin-right: 9%;
 		}
+
 	}
 	@media (max-width: 768px) {
 		.line-1 p:first-child {
@@ -206,11 +216,9 @@
 			p {
 				&:first-of-type {
 					margin-bottom: 10px;
-					transform: translate(0);
 					width: 90%;
 				}
 				&:last-of-type {
-					transform: translate(0%);
 					width: 80%;
 				}
 			}

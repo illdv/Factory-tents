@@ -31,7 +31,7 @@
 		width: 50%;
 		height: 100%;
 		background-size: cover;
-		background-image: url('../../img/standing-back.jpg');
+		// background-image: url('../../img/standing-back.jpg');
 		top: 0;
 		left: 0;
 		z-index: -1;
@@ -106,11 +106,9 @@
 			height: 200px;
 
 		}
-		&::after{
-			top: 15%;
-			left: 100%;
-			border-width: 40px ;
-		}
+&::after{
+	top: 13%;
+}
 
 		.caption {
 			margin-bottom: 70px;
@@ -137,7 +135,10 @@
 			display: none;
 		}
 	&::after{
-border-color: 		 #ebebeb
+border-color: 		 #ebebeb;
+	top: 15%;
+	left: 100%;
+	border-width: 40px ;
 	}
 		.caption {
 			transform: translate(0);

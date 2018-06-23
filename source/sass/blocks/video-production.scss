@@ -1,6 +1,6 @@
 .video-production {
 	padding: 50px 0;
-	background-image: url('../../img/video-production.jpg');
+	// background-image: url('../../img/video-production.jpg');
 	.row {
 		flex-wrap: nowrap;
 	}
@@ -24,7 +24,7 @@
 		}
 	}
 	.player-2 {
-		transform: translateX(-160px);
+		margin-left: -160px;
 		position: relative;
 		font-size: 0;
 		border: 50px solid $yellow-lighter;
@@ -78,7 +78,7 @@
 	}
 	@media (max-width: 1200px) {
 		.player-2 {
-			transform: translateX(-100px);
+			margin-left: -100px;
 		}
 	}
 	@media (max-width: 992px) {
@@ -89,7 +89,7 @@
 			margin-bottom: 70px;
 		}
 		.player-2 {
-			transform: translateX(0);
+			margin-left: 0;
 			margin-top: 0;
 			border-width: 25px;
 		}
