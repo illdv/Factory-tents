@@ -61,8 +61,8 @@
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="preload" href="./img/first-back.jpg" as='image'>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+	<link rel="preload" href="fonts/pfdintextpro-bold-webfont.woff2" as='image'>
 	<link href="css/styles.min.css" rel="stylesheet">
 	<link rel="icon" href="img/favicon.ico" type="image/ico">
 </head>
@@ -449,7 +449,7 @@
 
 
 			<div class="player__controls">
-				<button id="unmuteButton">
+				<button id="unmuteButton" aria-labelledby='muted'>
 					<svg id='off' xmlns="http://www.w3.org/2000/svg" width="24" height="24">
 						<path d="M16.5 12A4.5 4.5 0 0 0 14 7.97v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51A8.796 8.796 0 0 0 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a8.99 8.99 0 0 0 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"
 						/>
@@ -484,11 +484,11 @@
 		</h2>
 		<div class="carousel_wrap wow fadeInUp">
 			<div id="waterwheel">
-				<img src="img/photo-production-item-1.jpg" id="item-1" />
-				<img src="img/photo-production-item-2.jpg" id="item-2" />
-				<img src="img/photo-production-item-3.jpg" id="item-3" />
-				<img src="img/photo-production-item-4.jpg" id="item-4" />
-				<img src="img/photo-production-item-5.jpg" id="item-5" />
+				<img src="img/photo-production-item-1.jpg" id="item-1" alt="photo-1" />
+				<img src="img/photo-production-item-2.jpg" id="item-2" alt="photo-2"/>
+				<img src="img/photo-production-item-3.jpg" id="item-3" alt="photo-3"/>
+				<img src="img/photo-production-item-4.jpg" id="item-4" alt="photo-4"/>
+				<img src="img/photo-production-item-5.jpg" id="item-5" alt="photo-5"/>
 				<a id="prev" class="nav_button prev_button " title="prev">&lt;</a>
 				<a id="next" class="nav_button next_button" title="next">&gt;</a>
 			</div>
@@ -502,7 +502,7 @@
 					<span>с производства</span>
 				</h2>
 				<div class="player-2 col-12 col-lg-7 wow slideInRight embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" height="350" src="https://www.youtube.com/embed/oek9iPNBnwE" frameborder="0" allow="autoplay; encrypted-media"
+					<iframe class="embed-responsive-item" height="350" titile='видео с youtube'src="https://www.youtube.com/embed/oek9iPNBnwE" frameborder="0" allow="autoplay; encrypted-media"
 					  allowfullscreen></iframe>
 				</div>
 			</div>
@@ -823,21 +823,21 @@
 			<div class="row justify-content-center">
 				<div class="col-sm-4 gallery-items gallery-item-1 wow flipInX ">
 					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7yQ01Qjy1AE" frameborder="0" allow="autoplay; encrypted-media"
+						<iframe class="embed-responsive-item" titile='видео с youtube'src="https://www.youtube.com/embed/7yQ01Qjy1AE" frameborder="0" allow="autoplay; encrypted-media"
 						  allowfullscreen></iframe>
 					</div>
 					<h3>Мобильные шатры</h3>
 				</div>
 				<div class="col-sm-4 gallery-items gallery-item-2 wow flipInX">
 					<div class='embed-responsive embed-responsive-16by9'>
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PMXneXDnw-k" frameborder="0" allow="autoplay; encrypted-media"
+						<iframe class="embed-responsive-item" titile='видео с youtube' src="https://www.youtube.com/embed/PMXneXDnw-k" frameborder="0" allow="autoplay; encrypted-media"
 						  allowfullscreen></iframe>
 					</div>
 					<h3>Мембранные шатры</h3>
 				</div>
 				<div class="col-sm-4 gallery-items gallery-item-3 wow flipInX">
 					<div class='embed-responsive embed-responsive-16by9'>
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YdbCyA101cE" frameborder="0" allow="autoplay; encrypted-media"
+						<iframe class="embed-responsive-item" titile='видео с youtube'src="https://www.youtube.com/embed/YdbCyA101cE" frameborder="0" allow="autoplay; encrypted-media"
 						  allowfullscreen></iframe>
 					</div>
 					<h3>Арочные шатры</h3>
@@ -903,8 +903,8 @@
 							<linearGradient id="linear-gradient-2" x1="160.21" y1="79.07" x2="160.21" y2="198.34" xlink:href="#linear-gradient" />
 							<linearGradient id="linear-gradient-3" x1="54.53" y1="79.07" x2="54.53" y2="198.34" xlink:href="#linear-gradient" />
 						</defs>
-						<g id="Слой_2" data-name="Слой 2">
-							<g id="Layer_1" data-name="Layer 1">
+						<g  data-name="Слой 2">
+							<g  data-name="Layer 1">
 								<path class="cls-1" d="M13.74,133.6H5.44v2.72h7.15v4.19H5.44v6.39H0V129.14H13.74Z" />
 								<path class="cls-1" d="M31.12,146.9H25.61l-.87-2.52H19l-.88,2.52H12.64l6.56-17.76h5.39Zm-8.53-9.38a24.56,24.56,0,0,1-.67-2.69c-.3,1.22-.4,1.62-.75,2.72,0,0-.37,1.22-1,3h3.34Z"
 								/>
@@ -960,7 +960,7 @@
 					<a data-toggle="modal" data-target="#policy" class="privacy-policy" href="">Политика конфиденциальности</a>
 				</div>
 				<address class="copyright col d-flex align-items-center justify-content-center col order-3 order-lg-2">
-					<a href="https://zenga.ru" target="_blank">Разработка сайта и продвижение в интернете &nbsp
+					<a href="https://zenga.ru" target="_blank" rel="noopener">Разработка сайта и продвижение в интернете &nbsp
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90" height="21" viewBox="0 0 90 21">
 							<g>
 								<g transform="translate(-1043 -11954)">

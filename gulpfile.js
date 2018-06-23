@@ -13,20 +13,10 @@ const jsmin = require('gulp-jsmin');
 const server = require('browser-sync').create();
 const del = require('del');
 const svgo = require('gulp-svgo');
-const critical = require('critical');
 
 
-gulp.task('critical', function () {
-return critical.generate({
-  base: 'build/',
-  src: 'index.html',
-  dest: 'styles/style.min.css',
-  dest: 'index-critical.html',
-    minify: true,
-    width: 1300,
-    height: 900
-});
-});
+
+
 
 gulp.task('styles', function () {
   return gulp
@@ -71,7 +61,7 @@ gulp.task('jsmin', function () {
 });
 
 gulp.task('serve', function () {
-  server.init({
+return  server.init({
     server: 'build/',
   });
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.parallel('styles'));
