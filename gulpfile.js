@@ -14,10 +14,6 @@ const server = require('browser-sync').create();
 const del = require('del');
 const svgo = require('gulp-svgo');
 
-
-
-
-
 gulp.task('styles', function () {
   return gulp
     .src('source/sass/styles.scss')
@@ -55,13 +51,12 @@ gulp.task('minHtml', function () {
 gulp.task('jsmin', function () {
   return gulp.src('source/js/*.js')
     .pipe(jsmin())
-
     .pipe(gulp.dest('build/js'));
 
 });
 
 gulp.task('serve', function () {
-return  server.init({
+  server.init({
     server: 'build/',
   });
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.parallel('styles'));
@@ -76,6 +71,7 @@ gulp.task('copy', function () {
   return gulp.src([
       'source/fonts/*.{woff,woff2}',
       'source/img/**',
+      'source/video/**',
     ], {
       base: 'source'
     })
@@ -115,3 +111,11 @@ gulp.task('images', function () {
     ]))
     .pipe(gulp.dest('source/img'))
 })
+
+// gulp.tast('webp', function () {
+//   return gulp.src('source/img/**/*.{png,jpg}')
+//     .pipe(webp({
+//       quality: 90
+//     }))
+//     .pipe(gulp.dest('source/img'));
+// })

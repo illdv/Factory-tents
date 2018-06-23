@@ -1,12 +1,32 @@
 .standing {
 	padding: 50px 0;
-	background-image: url('../../img/standing-romb.png');
-	background-repeat: no-repeat;
-	background-position: 50% 0;
-	background-size: 18% 55%;
 	position: relative;
-	&::before {
+	overflow: hidden;
+	&::before{
 		content: '';
+		top: 6%;
+		position: absolute;
+		left: 50%;
+		margin-left: -100px;
+		width: 200px;
+		height: 200px;
+		background: $yellow-lighter;
+		transform: rotate(45deg);
+	}
+	&::after{
+		content: '';
+		position: absolute;
+		top: 16%;
+		position: absolute;
+		left: 50%;
+		margin-left: -100px;
+		width: 200px;
+		height: 200px;
+		border: 20px solid $yellow-lighter;
+		transform: rotate(45deg);
+		z-index: -1;
+	}
+	.background {
 		position: absolute;
 		width: 50%;
 		height: 100%;
@@ -68,7 +88,6 @@
 		}
 	}
 	@media (max-width: 1200px) {
-		background-size: 25% 50%, 50% 100%;
 		.carousel .image-block img {
 			object-fit: contain;
 			width: 210px;
@@ -76,7 +95,23 @@
 		}
 	}
 	@media (max-width: 992px) {
-		background-size: 27% 51%, 50% 100%;
+		&::before{
+			content: '';
+			position: absolute;
+			top: 7%;
+			position: absolute;
+			left: 50%;
+			margin-left: -100px;
+			width: 200px;
+			height: 200px;
+
+		}
+		&::after{
+			top: 15%;
+			left: 100%;
+			border-width: 40px ;
+		}
+
 		.caption {
 			margin-bottom: 70px;
 			transform: translateX(-3%);
@@ -94,10 +129,16 @@
 		}
 	}
 	@media (max-width: 768px) {
-		background-image: none;
-		&::before {
-			background-image: none;
+		.background {
+			display: none;
+	
 		}
+		&::before {
+			display: none;
+		}
+	&::after{
+border-color: 		 #ebebeb
+	}
 		.caption {
 			transform: translate(0);
 			text-align: center;
