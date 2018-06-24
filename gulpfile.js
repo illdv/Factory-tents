@@ -27,6 +27,16 @@ gulp.task('styles', function () {
     .pipe(gulp.dest('build/css'))
     .pipe(server.stream())
 });
+gulp.task('bootstrap', function () {
+  return gulp
+    .src('source/sass/bootstrap.scss')
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([autoprefixer()]))
+    .pipe(minify())
+    .pipe(gulp.dest('build/css'))
+    .pipe(server.stream())
+});
 gulp.task('critical', function () {
   return gulp
     .src('source/sass/critical.scss')
@@ -56,7 +66,7 @@ gulp.task('uncss', function () {
       ignore: ['.animated', '.animated.infinite', '.fadeIn', '.fadeInUp', 'flipInX', '.slideInLeft', '.slideInRight', /\.modal-open/, /\.show/, /\.modal-backdrop/, /\.fade/, /\.carousel-item-prev/, /\.carousel-item-next/, /\.carousel-item-left/, /\.carousel-item-right/, /\.was-validated/]
     }),
   ];
-  return gulp.src('build/css/styles.min.css')
+  return gulp.src('build/css/bootstrap.css')
     .pipe(postcss(plugins))
     .pipe(gulp.dest('build/css'));
 });
@@ -96,6 +106,7 @@ gulp.task('copy', function () {
       'source/fonts/*.{woff,woff2}',
       'source/img/**',
       'source/video/**',
+      'source/manifest.json',
     ], {
       base: 'source'
     })
@@ -104,7 +115,7 @@ gulp.task('copy', function () {
 gulp.task('clean', function () {
   return del('build');
 })
-gulp.task('build', gulp.series('clean', 'minHtml', 'copy', 'jsmin','critical', 'styles', 'animate'));
+gulp.task('build', gulp.series('clean', 'minHtml', 'copy', 'jsmin','critical', 'styles', 'bootstrap', 'animate'));
 
 
 
