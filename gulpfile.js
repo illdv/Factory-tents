@@ -27,7 +27,27 @@ gulp.task('styles', function () {
     .pipe(gulp.dest('build/css'))
     .pipe(server.stream())
 });
+gulp.task('critical', function () {
+  return gulp
+    .src('source/sass/critical.scss')
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([autoprefixer()]))
+    .pipe(minify())
+    .pipe(gulp.dest('build/css'))
+    .pipe(server.stream())
+});
 
+gulp.task('animate', function () {
+  return gulp
+    .src('source/sass/animate.scss')
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([autoprefixer()]))
+    .pipe(minify())
+    .pipe(gulp.dest('build/css'))
+    .pipe(server.stream())
+});
 
 gulp.task('uncss', function () {
   var plugins = [
@@ -84,7 +104,7 @@ gulp.task('copy', function () {
 gulp.task('clean', function () {
   return del('build');
 })
-gulp.task('build', gulp.series('clean', 'minHtml', 'copy', 'jsmin', 'styles'));
+gulp.task('build', gulp.series('clean', 'minHtml', 'copy', 'jsmin','critical', 'styles', 'animate'));
 
 
 
