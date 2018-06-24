@@ -1,0 +1,8 @@
+{
+    "name": "Factory tents",
+		  "short_name": "FacTents",
+    "icons": [{
+        "src": "img/favicon.ico",
+        "sizes": "64x64"
+    }]
+}
