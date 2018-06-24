@@ -1,8 +1,12 @@
 @import "./bootstrap/bootstrap";
 @import "fonts.scss";
+@import "common.scss";
 @import "variables.scss";
 @import "mixins.scss";
 @import "animate.scss";
+@import "mixins.scss";
+@import "./blocks/first-screen";
+@import "./blocks/produced";
 @import "./blocks/advantages";
 @import "./blocks/problems";
 @import "./blocks/numerals.scss";

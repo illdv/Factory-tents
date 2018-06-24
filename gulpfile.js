@@ -14,17 +14,7 @@ const server = require('browser-sync').create();
 const del = require('del');
 const svgo = require('gulp-svgo');
 
-gulp.task('critical', function () {
-  return gulp
-    .src('source/sass/critical.scss')
-    .pipe(plumber())
-    .pipe(sass())
-    .pipe(postcss([autoprefixer()]))
-    .pipe(minify())
-    .pipe(rename('critical.min.css'))
-    .pipe(gulp.dest('build/css'))
-    .pipe(server.stream())
-});
+
 
 gulp.task('styles', function () {
   return gulp
@@ -94,7 +84,7 @@ gulp.task('copy', function () {
 gulp.task('clean', function () {
   return del('build');
 })
-gulp.task('build', gulp.series('clean', 'minHtml', 'copy', 'jsmin', 'critical', 'styles'));
+gulp.task('build', gulp.series('clean', 'minHtml', 'copy', 'jsmin', 'styles'));
 
 
 
