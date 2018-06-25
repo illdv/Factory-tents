@@ -7,8 +7,9 @@
 	font-weight: 500;
 	text-transform: uppercase;
 	&:hover {
-		color: $yellow-darker;
+		color: $yellow-darker;	
 		background: black;
+		border:5px solid $yellow-darker;
 	}
 	&:active {
 		color: $white;
@@ -26,6 +27,8 @@
 	font-weight: bold;
 	&:hover {
 		background-color: $yellow-darker;
+		filter: brightness(130%);
+
 		color: black;
 	}
 	&:active {
