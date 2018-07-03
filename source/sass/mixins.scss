@@ -6,10 +6,12 @@
 	min-height: 55px;
 	font-weight: 500;
 	text-transform: uppercase;
+	padding: 5px;
 	&:hover {
-		color: $yellow-darker;	
+		color: $yellow-darker;
 		background: black;
-		border:5px solid $yellow-darker;
+		border: 5px solid $yellow-darker;
+		padding: 0;
 	}
 	&:active {
 		color: $white;
@@ -28,7 +30,6 @@
 	&:hover {
 		background-color: $yellow-darker;
 		filter: brightness(130%);
-
 		color: black;
 	}
 	&:active {
@@ -47,6 +48,8 @@
 		text-decoration: none;
 		white-space: nowrap;
 		&:hover {
+			color: $white;
+			text-decoration: none;
 			opacity: 0.8;
 		}
 		&:active {

@@ -15,7 +15,9 @@ footer {
 		border-bottom: 1px dotted #9aa2b2;
 		&:hover {
 			border-bottom: none;
+			text-decoration: none;
 			padding-bottom: 1px;
+			color: #9aa2b2;
 		}
 		&:active {
 			border-bottom: 1px dotted #9aa2b2;
